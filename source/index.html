@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
       <a class="header__logo">
-        <img src="../source/img/mishka-logo-mobile.png" alt="Логотип сайта">
+        <img src="img/mishka-logo-mobile.png" alt="Логотип сайта">
       </a>
       <nav class="main-nav">
         <button type="button">
@@ -15,7 +16,7 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог товаров</a>
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Вязание на заказ</a>
@@ -65,7 +66,7 @@
             </div>
           </dl>
         </div>
-        <img class="product__img" src="../source/img/offer-product.jpg" alt="Товар недели" width="260" height="315">
+        <img class="product__img" src="img/offer-product.jpg" alt="Товар недели" width="260" height="315">
         <div class="product__price">Цена: 990 руб.</div>
         <button class="product__button button" type="button">Заказать</button>
       </section>
@@ -153,7 +154,7 @@
         <dl class="contacts__list">
           <div class="contacts__item">
             <dt class="contacts__description">e-mail:</dt>
-            <dd class="contacts__text">info@mimimishkashop.ru</dd>
+            <dd class="contacts__text e-mail__text">info@mimimishkashop.ru</dd>
           </div>
           <div class="contacts__item">
             <dt class="contacts__description">адрес:</dt>
@@ -164,7 +165,9 @@
           <h3 class="visually-hidden">Карта</h3>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1638027818759!5m2!1sru!2sru" width="320" height="456" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <button class="reviews__button button" type="button">Напишите нам</button>
+        <button class="contacts__button button" type="button">
+          <a class="contacts__link" href="form.html">Напишите нам</a>
+        </button>
       </section>
     </main>
 
