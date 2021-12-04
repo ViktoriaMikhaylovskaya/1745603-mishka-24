@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  min-width: 320px;
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -12,6 +12,14 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }
 
 .visually-hidden {

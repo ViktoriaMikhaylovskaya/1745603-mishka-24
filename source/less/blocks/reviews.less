@@ -1,9 +1,40 @@
+.reviews {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
+
 .reviews__title {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.reviews__text {
+  @media (min-width: @tablet-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+
+.reviews__person {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .reviews__name {
@@ -11,4 +42,22 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+}
+
+.reviews__button {
+  @media (min-width: @tablet-width) {
+    grid-row-start: 3;
+    grid-row-end: -1;
+    grid-column-start: 3;
+    grid-column-end: -1;
+  }
+}
+
+.reviews__button-write {
+  @media (min-width: @tablet-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: -1;
+  }
 }
