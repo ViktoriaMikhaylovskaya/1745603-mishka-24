@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="form-header">
-      <a class="form-header__logo">
-        <img src="../source/img/mishka-logo-mobile.png" alt="Логотип сайта">
+      <a class="form-header__logo" href="index.html">
+        <img src="img/mishka-logo-mobile.png" alt="Логотип сайта">
       </a>
       <nav class="main-nav">
         <button type="button">
@@ -17,7 +18,7 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог товаров</a>
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Вязание на заказ</a>
@@ -143,10 +144,10 @@
           <legend class="sorting-type__title">Доп</legend>
           <p class="communication__field field">
             <label class="field__title"></label>
-            <textarea class="communication__text" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="communication__text additionally-text" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </p>
         </fieldset>
-        <p><sup>*</sup>Поля обязательны для заполнения</p>
+        <p class="communication__condition"><sup>*</sup>Поля обязательны для заполнения</p>
         <button class="button communication__button" type="submit">Отправить заказ</button>
       </form>
     </main>

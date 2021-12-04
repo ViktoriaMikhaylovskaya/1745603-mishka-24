@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <a class="header__logo">
-        <img src="../source/img/mishka-logo-mobile.png" alt="Логотип сайта">
+      <a class="header__logo" href="index.html">
+        <img src="img/mishka-logo-mobile.png" alt="Логотип сайта">
       </a>
       <nav class="main-nav">
         <button type="button">
@@ -15,7 +16,7 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог товаров</a>
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Вязание на заказ</a>
@@ -36,43 +37,49 @@
         <h2 class="catalog__title">Каталог товаров</h2>
         <div class="catalog__list ">
           <article class="catalog__item good">
-            <img class="good__img" src="../source/img/product-rabbit.jpg" alt="Фото вязаного зайца">
-            <div class="good__product">
-              <h3 class="good__title"><a class="good__link" href="#">Зайчик-попрыгайчик</a></h3>
-              <p class="good__text">Рост 30 см, вес 200 г</p>
-            </div>
-            <div class="good__buy">
-              <b class="doog_price">1 200 руб.</b>
-              <button class="good__button button" type="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
-            </div>
+            <a class="good__link" href="#">
+              <img class="good__img" src="img/product-rabbit.jpg" alt="Фото вязаного зайца">
+              <div class="good__product">
+                <h3 class="good__title">Зайчик-попрыгайчик</h3>
+                <p class="good__text">Рост 30 см, вес 200 г</p>
+              </div>
+              <div class="good__buy">
+                <b class="doog_price">1 200 руб.</b>
+                <button class="good__button" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </a>
           </article>
           <article class="catalog__item good">
-            <img class="good__img" src="../source/img/product--laundry-basket.jpg" alt="Корзинка для белья">
-            <div class="good__product">
-              <h3 class="good__title"><a class="good__link" href="#">Корзинка для белья</a></h3>
-              <p class="good__text">Диаметр 15 см, высота 10 см</p>
-            </div>
-            <div class="good__buy">
-              <b class="doog_price">690 руб.</b>
-              <button class="good__button button" type="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
-            </div>
+            <a class="good__link" href="#">
+              <img class="good__img" src="img/product--laundry-basket.jpg" alt="Корзинка для белья">
+              <div class="good__product">
+                <h3 class="good__title">Корзинка для белья</h3>
+                <p class="good__text">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div class="good__buy">
+                <b class="good_price">690 руб.</b>
+                <button class="good__button" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </a>
           </article>
           <article class="catalog__item good">
-            <img class="good__img" src="../source/img/product-large-busket.jpg" alt="Большая корзинка для игрушек">
-            <div class="good__product">
-              <h3 class="good__title"><a class="good__link" href="#">Большая корзинка для игрушек</a></h3>
-              <p class="good__text">Диаметр 30 см, высота 30 см</p>
-            </div>
-            <div class="good__buy">
-              <b class="doog_price">1 500 руб.</b>
-              <button class="good__button button" type="button">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
-            </div>
+            <a class="good__link" href="#">
+              <img class="good__img" src="img/product-large-busket.jpg" alt="Большая корзинка для игрушек">
+              <div class="good__product">
+                <h3 class="good__title"><a class="good__link" href="#">Большая корзинка для игрушек</a></h3>
+                <p class="good__text">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="good__buy">
+                <b class="good_price">1 500 руб.</b>
+                <button class="good__button" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </a>
           </article>
         </div>
       </section>
@@ -84,10 +91,12 @@
           </svg>
           <h3 class="video__tittle">Процесс производства</h3>
         </div>
-        <img class="video__img" src="../source/img/product-video-busket.jpg" alt="Видео с процессом производства">
+        <img class="video__img" src="img/product-video-busket.jpg" alt="Видео с процессом производства">
         <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
       </section>
-      <button class="catalog__button button" type="button">Сделать заказ</button>
+      <button class="catalog__button button" type="button">
+        <a class="form__link">Сделать заказ</a>
+      </button>
     </main>
 
     <footer class="footer">
