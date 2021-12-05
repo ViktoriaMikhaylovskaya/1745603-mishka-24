@@ -80,4 +80,10 @@
 .main-nav__text {
   margin: 0;
   margin-left: auto;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 1;
+  }
 }
