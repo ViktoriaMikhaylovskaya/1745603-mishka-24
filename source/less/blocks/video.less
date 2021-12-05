@@ -1,7 +1,41 @@
+.video {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
+
 .video__tittle {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
+}
+
+.video__wrap {
+  display: flex;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.video__img {
+  @media (min-width: @tablet-width) {
+    order: -1;
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }

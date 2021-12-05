@@ -7,8 +7,29 @@
   color: #000000;
 }
 
+.catalog__list {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+  }
+}
+
+.catalog__item {
+  margin-bottom: 20px;
+}
+
 .good__link {
   .link-reset;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .good__title {
