@@ -1,19 +1,73 @@
+.advantages {
+  background-color: #ffffff;
+  padding: 50px;
+}
+
 .advantages__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .advantages__list {
   .list-reset;
 
   @media (min-width: @tablet-width) {
-    height: 350px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    column-gap: 70px;
+    justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 80px;
+  }
+}
+
+.advantages__item {
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+}
+
+.advantages__item--yarn {
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}
+
+.advantages__item--money {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+}
+
+.advantages__item--rocket {
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
+}
+
+.advantages__item--heart {
+  @media (min-width: @tablet-width) {
+    order: 4;
+  }
+}
+
+.advantages__item--gift {
+  @media (min-width: @tablet-width) {
+    order: 5;
   }
 }
 
@@ -22,4 +76,12 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+  margin: 0;
+  margin-top: 15px;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
