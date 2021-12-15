@@ -5,49 +5,69 @@
   line-height: 30px;
   color: #000000;
   margin: 0;
-  padding-top: 110px;
-  width: 300px;
-  height: 300px;
+  padding: 73px 30px;
+  padding-bottom: 120px;
+  min-height: 180px;
+  text-align: center;
+  background-color: #ffffff;
   background-image: url("../../img/promo-background.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     background-image: url("../../img/promo-image-desktop.jpg");
-    width: 100%;
     height: 400px;
     background-size: contain;
     background-repeat: no-repeat;
+    font-size: 43px;
+    line-height: 50px;
   }
 }
 
 .promo__list {
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
+    min-width: @tablet-width;
     display: flex;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
+    min-width: @desktop-width;
     display: flex;
   }
 }
 
 .promo__item {
+  padding: 23px 30px;
+  display: flex;
+  justify-content: space-between;
+
   @media (min-width: @tablet-width) {
     flex-grow: 1;
   }
 }
 
+.promo__item img {
+  padding-left: 40px;
+}
+
 .promo__interior {
   background-color: #63d1bb;
-  padding: 24px 0;
 }
 
 .promo__kids-toys {
   background-color: #56c3b2;
-  padding: 24px 0;
 }
 
 .promo__link {
   .link-reset;
-  padding: 25px 36px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
