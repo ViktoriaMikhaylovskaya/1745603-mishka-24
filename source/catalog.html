@@ -8,40 +8,63 @@
   </head>
   <body>
     <header class="header">
-      <nav class="main-nav">
-        <a class="header__logo" href="index.html">
-          <img src="img/mishka-logo-mobile.png" alt="Логотип сайта">
-        </a>
-        <button class="button__menu" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="site__list">
-          <li class="site__item">
-            <a class="site__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site__item">
-            <a class="site__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="user__list">
-          <li class="user__item">
-            <a class="user__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="user__item">
-            <a class="user__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <ul class="news__list">
-          <li class="news__item">
-            <a class="news__link" href="#">Новые поступления</a>
-          </li>
-          <li class="news__item">
-            <a class="news__link" href="#">Распродажа</a>
-          </li>
-        </ul>
-        <p class="main-nav__text">Бесплатная доставка по России</p>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <a class="header__logo" href="index.html">
+            <img src="img/mishka-logo-mobile.png" alt="Логотип сайта">
+          </a>
+          <button class="button__menu main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site__list">
+            <li class="site__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="user__list">
+            <li class="user__item">
+              <a class="main-nav__link main-nav__search" href="#">
+                <img src="img/search.svg">
+                <p class="main-nav__search--text">Поиск по сайту</p></a>
+            </li>
+            <li class="user__item">
+              <a class="main-nav__link" href="#">
+                <img src="img/cart.svg">
+                Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="news__list">
+            <li class="news__item">
+              <a class="news__link" href="#">Новые поступления</a>
+            </li>
+            <li class="news__item">
+              <a class="news__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <p class="main-nav__text">Бесплатная доставка по России</p>
+        </div>
       </nav>
     </header>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
 
     <main class="main">
       <h1 class="visually-hidden">"Мишка" - магазин предметов ручной работы для дома</h1>
@@ -60,6 +83,7 @@
                   <b class="doog_price">1 200 руб.</b>
                   <button class="good__button" type="button">
                     <span class="visually-hidden">Добавить в корзину</span>
+                    <img src="img/cart.svg">
                   </button>
                 </div>
               </div>
@@ -77,6 +101,7 @@
                   <b class="good_price">690 руб.</b>
                   <button class="good__button" type="button">
                     <span class="visually-hidden">Добавить в корзину</span>
+                    <img src="img/cart.svg">
                   </button>
                 </div>
               </div>
@@ -87,13 +112,14 @@
               <img class="good__img" src="img/product-large-busket.jpg" alt="Большая корзинка для игрушек">
               <div class="good__info">
                 <div class="good__product">
-                  <h3 class="good__title">Большая корзинка для игрушек</h3>
+                  <h3 class="good__title">Большая корзинка <br> для игрушек</h3>
                   <p class="good__text">Диаметр 30 см, высота 30 см</p>
                 </div>
                 <div class="good__buy">
                   <b class="good_price">1 500 руб.</b>
                   <button class="good__button" type="button">
                     <span class="visually-hidden">Добавить в корзину</span>
+                    <img src="img/cart.svg">
                   </button>
                 </div>
               </div>

@@ -8,41 +8,64 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="form-header">
-      <nav class="main-nav">
-        <a class="header__logo" href="index.html">
-          <img src="img/mishka-logo-mobile.png" alt="Логотип сайта">
-        </a>
-        <button class="button__menu" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="site__list">
-          <li class="site__item">
-            <a class="site__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site__item">
-            <a class="site__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="user__list">
-          <li class="user__item">
-            <a class="user__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="user__item">
-            <a class="user__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <ul class="news__list">
-          <li class="news__item">
-            <a class="news__link" href="#">Новые поступления</a>
-          </li>
-          <li class="news__item">
-            <a class="news__link" href="#">Распродажа</a>
-          </li>
-        </ul>
-        <p class="main-nav__text">Бесплатная доставка по России</p>
+    <header class="header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <a class="header__logo" href="index.html">
+            <img src="img/mishka-logo-mobile.png" alt="Логотип сайта">
+          </a>
+          <button class="button__menu main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site__list">
+            <li class="site__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="user__list">
+            <li class="user__item">
+              <a class="main-nav__link main-nav__search" href="#">
+                <img src="img/search.svg">
+                <p class="main-nav__search--text">Поиск по сайту</p></a>
+            </li>
+            <li class="user__item">
+              <a class="main-nav__link" href="#">
+                <img src="img/cart.svg">
+                Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="news__list">
+            <li class="news__item">
+              <a class="news__link" href="#">Новые поступления</a>
+            </li>
+            <li class="news__item">
+              <a class="news__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <p class="main-nav__text">Бесплатная доставка по России</p>
+        </div>
       </nav>
     </header>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
 
     <main>
       <h1 class="visually-hidden">"Мишка" - магазин предметов ручной работы для дома</h1>
@@ -51,27 +74,27 @@
         <p class="form-promo__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </section>
 
-      <form class="sorting-type communication" action="https://echo.htmlacademy.ru/" method="POST">
+      <form class="sorting-type " action="https://echo.htmlacademy.ru/" method="POST">
         <fieldset class="sorting-type__group">
           <legend class="sorting-type__title">Тип</legend>
           <ul class="sorting-type__list sorting-type__list--type">
             <li class="sorting-type__item">
               <label class="sorting-type__control control-mark control" tabindex="0">
-                <input class="visually-hidden" type="radio" name="type" value="interior-accessory" checked>
+                <input class="visually-hidden control__input-radio" type="radio" name="type" value="interior-accessory" checked>
                 <span class="control-mark__radio"></span>
                 <span class="control__label">Аксессуар для интерьера</span>
               </label>
             </li>
             <li class="sorting-type_item">
               <label class="sorting-type__control control-mark control" tabindex="0">
-                <input class="visually-hidden" type="radio" name="type" value="kids-toy">
+                <input class="visually-hidden control__input-radio" type="radio" name="type" value="kids-toy">
                 <span class="control-mark__radio"></span>
                 <span class="control__label">Детская игрушка</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="sorting-type__group">
+        <fieldset class="sorting-type__group sorting-type__group--color">
           <legend class="sorting-type__title">Цвет</legend>
           <ul class="sorting-type__list">
             <li class="sorting-type__item">
@@ -81,35 +104,35 @@
                 <span class="control__label">Белый</span>
               </label>
             </li>
-            <li class="sorting-type_item">
+            <li class="sorting-type__item">
               <label class="sorting-type__control control-mark control" tabindex="0">
                 <input class="visually-hidden control-input" type="checkbox" name="color" value="gray" checked>
                 <span class="control-mark__checkbox"></span>
                 <span class="control__label">Серый</span>
               </label>
             </li>
-            <li class="sorting-type_item">
+            <li class="sorting-type__item">
               <label class="sorting-type__control control-mark control" tabindex="0">
                 <input class="visually-hidden control-input" type="checkbox" name="color" value="tiffany">
                 <span class="control-mark__checkbox"></span>
                 <span class="control__label">«Тиффани»</span>
               </label>
             </li>
-            <li class="sorting-type_item">
+            <li class="sorting-type__item">
               <label class="sorting-type__control control-mark control" tabindex="0">
                 <input class="visually-hidden control-input" type="checkbox" name="color" value="black">
                 <span class="control-mark__checkbox"></span>
                 <span class="control__label">Черный</span>
               </label>
             </li>
-            <li class="sorting-type_item">
+            <li class="sorting-type__item">
               <label class="sorting-type__control control-mark control" tabindex="0">
                 <input class="visually-hidden control-input" type="checkbox" name="color" value="pink">
                 <span class="control-mark__checkbox"></span>
                 <span class="control__label">Розовый</span>
               </label>
             </li>
-            <li class="sorting-type_item">
+            <li class="sorting-type__item">
               <label class="sorting-type__control control-mark control" tabindex="0">
                 <input class="visually-hidden control-input" type="checkbox" name="color" value="orange">
                 <span class="control-mark__checkbox"></span>
@@ -121,33 +144,35 @@
 
         <fieldset class="sorting-type__group communication">
           <legend class="sorting-type__title">ФИО</legend>
-          <p class="communication__field field">
-            <label class="field__title" for="name-person">Имя:</label>
-            <input class="communication__text" placeholder="Введите ваше имя*" type="text" name="name-person" id="name-person">
-          </p>
-          <p class="communication__field field">
-            <label class="field__title" for="surname-person">Фамилия:</label>
-            <input class="communication__text" placeholder="Укажите фамилию*" type="text" name="surname-person" id="surname-person">
-          </p>
-          <p class="communication__field field">
-            <label class="field__title" for="patronymic-person">Отчество:</label>
-            <input class="communication__text" placeholder="Отчество, если желаете" type="text" name="patronymic-person" id="patronymic-person">
-          </p>
+          <div class="communication--section">
+            <p class="communication__field field">
+              <label class="field__title" for="name-person">Имя:</label>
+              <input class="communication__text" placeholder="Введите ваше имя*" type="text" name="name-person" id="name-person">
+            </p>
+            <p class="communication__field field">
+              <label class="field__title" for="surname-person">Фамилия:</label>
+              <input class="communication__text" placeholder="Укажите фамилию*" type="text" name="surname-person" id="surname-person">
+            </p>
+            <p class="communication__field field">
+              <label class="field__title" for="patronymic-person">Отчество:</label>
+              <input class="communication__text" placeholder="Отчество, если желаете" type="text" name="patronymic-person" id="patronymic-person">
+            </p>
+          </div>
         </fieldset>
 
-        <fieldset class="sorting-type__group communication">
+        <fieldset class="sorting-type__group sorting-type__group--tel communication">
           <legend class="sorting-type__title">тел</legend>
           <p class="communication__field field">
             <label class="field__title" for="communication-tel"></label>
-            <input class="communication__text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="communication-tel" id="communication-tel">
+            <input class="communication__text communication__text--tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="communication-tel" id="communication-tel">
           </p>
         </fieldset>
 
-        <fieldset class="sorting-type__group communication">
+        <fieldset class="sorting-type__group sorting-type__group--email communication">
           <legend class="sorting-type__title">E-mail</legend>
           <p class="communication__field field">
             <label class="field__title" for="e-mail"></label>
-            <input class="communication__text" placeholder="Ваш Email*" type="email" name="e-mail" id="e-mail">
+            <input class="communication__text communication__text--email" placeholder="Ваш Email*" type="email" name="e-mail" id="e-mail">
           </p>
         </fieldset>
 
