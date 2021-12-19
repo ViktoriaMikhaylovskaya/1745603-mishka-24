@@ -110,7 +110,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 30px;
+    padding: 0 30px;
     font-size: 17px;
     line-height: 24px;
   }
@@ -118,7 +118,6 @@
 
 .main-nav--opened .main-nav__wrapper {
   position: absolute;
-  top: 80px;
   right: 0;
   left: 0;
   z-index: 10;
@@ -170,13 +169,14 @@
 
 .main-nav__link {
   .link-reset;
+  display: flex;
+  flex-wrap: nowrap;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   padding: 26px;
   position: relative;
-  display: block;
   color: #000000;
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
