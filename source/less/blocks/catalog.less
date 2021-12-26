@@ -1,5 +1,6 @@
 .catalog__title {
   padding: 72px 41px;
+  padding-top: 160px;
   margin: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
@@ -8,6 +9,12 @@
   color: #000000;
   text-align: center;
   background-color: #f1f1f1;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -90px;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .catalog__list {
@@ -84,7 +91,6 @@
 .good__img {
   @media (min-width: @tablet-width) {
     min-width: 316px;
-    height: 462px;
   }
 }
 
@@ -120,9 +126,11 @@
 
   @media (min-width: @tablet-width) {
     width: 90%;
+    order: 3;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
+    order: 0;
   }
 }

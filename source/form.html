@@ -12,7 +12,11 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="header__logo" href="index.html">
-            <img src="img/mishka-logo-mobile.png" alt="Логотип сайта">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.png 1x, img/mishka-logo-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.png 1x, img/mishka-logo-tablet@2x.png 2x">
+              <img src="img/mishka-logo-mobile.png" srcset="img/mishka-logo-mobile@2x.png 2x" alt="Логотип сайта">
+            </picture>
           </a>
           <button class="button__menu main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -75,8 +79,8 @@
       </section>
 
       <form class="sorting-type " action="https://echo.htmlacademy.ru/" method="POST">
-        <fieldset class="sorting-type__group">
-          <legend class="sorting-type__title">Тип</legend>
+        <div class="sorting-type__group">
+          <p class="sorting-type__title">Тип</p>
           <ul class="sorting-type__list sorting-type__list--type">
             <li class="sorting-type__item">
               <label class="sorting-type__control control-mark control" tabindex="0">
@@ -93,10 +97,10 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="sorting-type__group sorting-type__group--color">
-          <legend class="sorting-type__title">Цвет</legend>
-          <ul class="sorting-type__list">
+        </div>
+        <div class="sorting-type__group sorting-type__group--color">
+          <p class="sorting-type__title">Цвет</p>
+          <ul class="sorting-type__list sorting-type__list--color">
             <li class="sorting-type__item">
               <label class="sorting-type__control control-mark control" tabindex="0">
                 <input class="visually-hidden control-input" type="checkbox" name="color" value="white" checked>
@@ -140,10 +144,10 @@
               </label>
             </li>
           </ul>
-        </fieldset>
+        </div>
 
-        <fieldset class="sorting-type__group communication">
-          <legend class="sorting-type__title">ФИО</legend>
+        <div class="sorting-type__group communication">
+          <p class="sorting-type__title">ФИО</p>
           <div class="communication--section">
             <p class="communication__field field">
               <label class="field__title" for="name-person">Имя:</label>
@@ -158,31 +162,31 @@
               <input class="communication__text" placeholder="Отчество, если желаете" type="text" name="patronymic-person" id="patronymic-person">
             </p>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="sorting-type__group sorting-type__group--tel communication">
-          <legend class="sorting-type__title">тел</legend>
+        <div class="sorting-type__group sorting-type__group--tel communication">
+          <p class="sorting-type__title">тел</p>
           <p class="communication__field field">
             <label class="field__title" for="communication-tel"></label>
             <input class="communication__text communication__text--tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="communication-tel" id="communication-tel">
           </p>
-        </fieldset>
+        </div>
 
-        <fieldset class="sorting-type__group sorting-type__group--email communication">
-          <legend class="sorting-type__title">E-mail</legend>
+        <div class="sorting-type__group sorting-type__group--email communication">
+          <p class="sorting-type__title">E-mail</p>
           <p class="communication__field field">
             <label class="field__title" for="e-mail"></label>
             <input class="communication__text communication__text--email" placeholder="Ваш Email*" type="email" name="e-mail" id="e-mail">
           </p>
-        </fieldset>
+        </div>
 
-        <fieldset class="sorting-type__group communication">
-          <legend class="sorting-type__title">Доп</legend>
+        <div class="sorting-type__group communication">
+          <p class="sorting-type__title">Доп</p>
           <p class="communication__field field">
             <label class="field__title"></label>
             <textarea class="communication__text additionally-text" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </p>
-        </fieldset>
+        </div>
         <div class="communication__bottom">
           <p class="communication__condition"><sup>*</sup>Поля обязательны для заполнения</p>
           <button class="button communication__button" type="submit">Отправить заказ</button>
