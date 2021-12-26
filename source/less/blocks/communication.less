@@ -2,7 +2,7 @@
   padding: 0 30px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 50px;
+    padding: 50px 50px;
   }
 }
 
@@ -37,12 +37,31 @@
   padding: 15px 0;
   border: none;
   border-bottom: 2px solid #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .communication__text--tel,
-.communication__text--email{
+.communication__text--email {
   @media (min-width: @tablet-width) {
     background-color: #f1f1f1;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+.communication__text--tel {
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/communication-tel-icon.svg");
+  }
+}
+
+.communication__text--email {
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/communication-e-mail-icon.svg");
   }
 }
 

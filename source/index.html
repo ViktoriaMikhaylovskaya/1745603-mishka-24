@@ -11,7 +11,11 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="header__logo" href="index.html">
-            <img src="img/mishka-logo-mobile.png" alt="Логотип сайта">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.png 1x, img/mishka-logo-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.png 1x, img/mishka-logo-tablet@2x.png 2x">
+              <img src="img/mishka-logo-mobile.png" srcset="img/mishka-logo-mobile@2x.png 2x" alt="Логотип сайта">
+            </picture>
           </a>
           <button class="button__menu main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -105,7 +109,11 @@
             </div>
           </dl>
         </div>
-        <img class="product__img" src="img/offer-product.jpg" alt="Товар недели" width="260" height="315">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/offer-product-desktop.jpg 1x, img/offer-product-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/offer-product-tablet.jpg 1x, img/offer-product-tablet@2x.jpg 2x">
+          <img class="product__img" src="img/offer-product-mobile.jpg" srcset="img/offer-product-mobile@2x.jpg 2x" alt="Товар недели">
+        </picture>
         <div class="product__order">
           <div class="product__price">Цена: 990 руб.</div>
           <button class="product__button button" type="button">Заказать</button>

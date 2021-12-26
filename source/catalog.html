@@ -11,7 +11,11 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="header__logo" href="index.html">
-            <img src="img/mishka-logo-mobile.png" alt="Логотип сайта">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.png 1x, img/mishka-logo-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.png 1x, img/mishka-logo-tablet@2x.png 2x">
+              <img src="img/mishka-logo-mobile.png" srcset="img/mishka-logo-mobile@2x.png 2x" alt="Логотип сайта">
+            </picture>
           </a>
           <button class="button__menu main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -73,7 +77,11 @@
         <div class="catalog__list ">
           <article class="catalog__item good">
             <a class="good__link" href="#">
-              <img class="good__img" src="img/product-rabbit.jpg" alt="Фото вязаного зайца">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/product-rabbit-desktop.jpg 1x, img/product-rabbit-desktop@2x.jpg 2x" width="316" height="462">
+                <source media="(min-width: 768px)" srcset="img/product-rabbit-tablet.jpg 1x, img/product-rabbit-tablet@2x.jpg 2x" width="334" height="324">
+                <img class="good__img" src="img/product-rabbit-mobile.jpg" srcset="img/product-rabbit-mobile@2x.jpg" alt="Фото вязаного зайца" width="260" height="195">
+              </picture>
               <div class="good__info">
                 <div class="good__product">
                   <h3 class="good__title">Зайчик-попрыгайчик</h3>
@@ -91,7 +99,11 @@
           </article>
           <article class="catalog__item good">
             <a class="good__link" href="#">
-              <img class="good__img" src="img/product--laundry-basket.jpg" alt="Корзинка для белья">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/product--laundry-basket-desktop.jpg 1x, img/product--laundry-basket-desktop@2x.jpg 2x" width="316" height="462">
+                <source media="(min-width: 768px)" srcset="img/product--laundry-basket-tablet.jpg 1x, img/product--laundry-basket-tablet@2x.jpg 2x" width="334" height="324">
+                <img class="good__img" src="img/product--laundry-basket-mobile.jpg" srcset="img/product--laundry-basket-mobile@2x.jpg" alt="Корзинка для белья" width="260" height="195">
+              </picture>
               <div class="good__info">
                 <div class="good__product">
                   <h3 class="good__title">Корзинка для белья</h3>
@@ -109,7 +121,11 @@
           </article>
           <article class="catalog__item good">
             <a class="good__link" href="#">
-              <img class="good__img" src="img/product-large-busket.jpg" alt="Большая корзинка для игрушек">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/product-large-busket-desktop.jpg 1x, img/product-large-busket-desktop@2x.jpg 2x" width="316" height="462">
+                <source media="(min-width: 768px)" srcset="img/product-large-busket-tablet.jpg 1x, img/product-large-busket-tablet@2x.jpg 2x" width="334" height="324">
+                <img class="good__img" src="img/product-large-busket-mobile.jpg" srcset="img/product-large-busket-mobile@2x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+              </picture>
               <div class="good__info">
                 <div class="good__product">
                   <h3 class="good__title">Большая корзинка <br> для игрушек</h3>
@@ -135,7 +151,14 @@
           </svg>
           <h3 class="video__tittle">Процесс производства</h3>
         </div>
-        <img class="video__img" src="img/product-video-busket.jpg" alt="Видео с процессом производства">
+        <!-- <span class="video__play"></span> -->
+        <div class="video__image">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/product-video-busket-desktop.jpg 1x, img/product-video-busket-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/product-video-busket-tablet.jpg 1x, img/product-video-busket-tablet@2x.jpg 2x">
+            <img class="video__img" src="img/product-video-busket-mobile.jpg" srcset="img/product-video-busket-mobile@2x.jpg" alt="Видео с процессом производства">
+          </picture>
+        </div>
         <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <button class="catalog__button button" type="button">
           <a class="form__link">Сделать заказ</a>

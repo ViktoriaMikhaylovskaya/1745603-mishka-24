@@ -10,17 +10,22 @@
   min-height: 180px;
   text-align: center;
   background-color: #ffffff;
-  background-image: url("../../img/promo-background.jpg");
+  background-image: url("../../img/promo-background-mobile.jpg");
+  background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/promo-image-desktop.jpg");
+    background-image: url("../../img/promo-background-tablet.jpg");
     height: 400px;
     background-size: contain;
     background-repeat: no-repeat;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/promo-background-desktop.jpg");
   }
 }
 

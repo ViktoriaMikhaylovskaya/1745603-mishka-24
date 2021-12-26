@@ -5,7 +5,8 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 0 50px;
+    padding: 50px;
+    margin-bottom: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -14,11 +15,11 @@
 
 .sorting-type__group::after {
   position: absolute;
-  top: -10px;
+  top: 10px;
   left: 100px;
   height: 2px;
   background-color: #62d1ba;
-  width: 65%;
+  width: 200px;
   content: "";
 
   @media (min-width: @tablet-width) {
@@ -34,11 +35,25 @@
     flex-wrap: wrap;
     gap: 50px;
   }
+
+  @media (min-width: @desktop-width) {
+    gap: 10px;
+  }
 }
 
 .sorting-type__list--type {
   @media (min-width: @tablet-width) {
     flex-direction: column;
+  }
+}
+
+.sorting-type__list--color {
+  @media (min-width: @tablet-width) {
+    margin-left: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 50px;
   }
 }
 
@@ -57,13 +72,17 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #63d1bb;
+
+  @media (min-width: @tablet-width) {
+    width: 150px;
+  }
 }
 
 .sorting-type__item {
   margin-bottom: 15px;
 
-  @media (min-width: @tablet-width)  {
-    width: 300px;
+  @media (min-width: @tablet-width) {
+    width: 240px;
   }
 }
 
@@ -86,7 +105,7 @@
 
   @media (min-width: @tablet-width) {
     width: 52px;
-  height: 52px;
+    height: 52px;
   }
 }
 
@@ -99,6 +118,13 @@
   background-color: #62d1ba;
   border-radius: 50%;
   content: "";
+
+  @media (min-width: @tablet-width) {
+    top: 15px;
+    left: 15px;
+    width: 22.69px;
+    height: 22.69px;
+  }
 }
 
 .control__label {
@@ -129,6 +155,6 @@
   left: 4px;
 }
 
-.control-input:checked +  .control-mark__checkbox::before {
+.control-input:checked + .control-mark__checkbox::before {
   content: url("../../img/checkbox-active.svg");
 }

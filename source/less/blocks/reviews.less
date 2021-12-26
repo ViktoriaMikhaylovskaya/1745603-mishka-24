@@ -3,12 +3,17 @@
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    padding: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: auto auto auto;
-    background-image: url("../../img/review-background.jpg");
+    background-image: url("../../img/review-background-tablet.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/review-background-desktop.jpg");
   }
 }
 
