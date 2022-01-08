@@ -8,7 +8,21 @@
 }
 
 .header__logo {
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.header__logo--img {
+  padding: 22px 0;
+  padding-left: 116px;
+
   @media (min-width: @tablet-width) {
-    padding: 22px 0;
+    padding-left: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 23px;
+    padding-top: 6px;
   }
 }
