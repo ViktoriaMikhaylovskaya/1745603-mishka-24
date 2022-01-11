@@ -189,7 +189,8 @@
 
       <form class="sorting-type " action="https://echo.htmlacademy.ru/" method="POST">
         <div class="sorting-type__group">
-          <p class="sorting-type__title">Тип</p>
+          <p class="sorting-type__title">
+            <span class="sorting-type__text">Тип</span></p>
           <ul class="sorting-type__list sorting-type__list--type">
             <li class="sorting-type__item">
               <label class="sorting-type__control control-mark control" tabindex="0">
@@ -208,7 +209,9 @@
           </ul>
         </div>
         <div class="sorting-type__group sorting-type__group--color">
-          <p class="sorting-type__title">Цвет</p>
+          <p class="sorting-type__title">
+            <span class="sorting-type__text">Цвет</span>
+          </p>
           <ul class="sorting-type__list sorting-type__list--color">
             <li class="sorting-type__item sorting-type__item--color">
               <label class="sorting-type__control control-mark control" tabindex="0">
@@ -256,7 +259,9 @@
         </div>
 
         <div class="sorting-type__group communication">
-          <p class="sorting-type__title">ФИО</p>
+          <p class="sorting-type__title">
+            <span class="sorting-type__text">ФИО</span>
+            </p>
           <div class="communication--section">
             <p class="communication__field field">
               <label class="field__title" for="name-person">Имя:</label>
@@ -274,7 +279,9 @@
         </div>
 
         <div class="sorting-type__group sorting-type__group--tel communication">
-          <p class="sorting-type__title sorting-type__title--tel">тел</p>
+          <p class="sorting-type__title sorting-type__title--tel">
+            <span class="sorting-type__text">тел</span>
+          </p>
           <p class="communication__field field">
             <label class="field__title" for="communication-tel"></label>
             <input class="communication__text communication__text--tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="tel" name="communication-tel" id="communication-tel">
@@ -282,7 +289,9 @@
         </div>
 
         <div class="sorting-type__group sorting-type__group--email communication">
-          <p class="sorting-type__title sorting-type__title--email">E-mail</p>
+          <p class="sorting-type__title sorting-type__title--email">
+            <span class="sorting-type__text">E-mail</span>
+          </p>
           <p class="communication__field field">
             <label class="field__title" for="e-mail"></label>
             <input class="communication__text communication__text--email" placeholder="Ваш Email*" type="email" name="e-mail" id="e-mail">
@@ -290,7 +299,9 @@
         </div>
 
         <div class="sorting-type__group communication communication__extra">
-          <p class="sorting-type__title sorting-type__title--extra">Доп</p>
+          <p class="sorting-type__title sorting-type__title--extra">
+            <span class="sorting-type__text">Доп</span>
+          </p>
           <p class="communication__field field">
             <label class="field__title"></label>
             <textarea class="communication__text additionally-text" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -327,7 +338,7 @@
           </li>
           <li class="social__item">
             <span class="visually-hidden">Твиттер</span>
-            <a class="social__link">
+            <a class="social__link" href="#">
               <svg class="icon" width="23" height="20">
                 <use xlink:href="#twitter-icon"></use>
               </svg>

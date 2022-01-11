@@ -74,6 +74,7 @@
   border: none;
   background-color: #ffffff;
   padding: 0;
+  position: relative;
 
   @media (min-width: @desktop-width) {
     grid-row-start: 1;
@@ -85,21 +86,12 @@
 
 .video__image::before {
   position: absolute;
-  left: 30%;
-  top: 27%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100.6px;
   height: 76.8px;
   content: url("../../img/play.svg");
-
-  @media (min-width: @tablet-width) {
-    left: 42.5%;
-    top: 26%;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 40%;
-    left: 27%;
-  }
 }
 
 .video__img {

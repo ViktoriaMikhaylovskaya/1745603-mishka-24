@@ -22,11 +22,15 @@
 .sorting-type__group::after {
   position: absolute;
   top: 8px;
-  right: 30px;
   height: 1px;
+  right: 30px;
   background-color: #62d1ba;
   width: 200px;
   content: "";
+
+  @media (min-width: 320px) and (max-width: @mobile-width-only) {
+    width: 81%;
+  }
 
   @media (min-width: @tablet-width) {
     background-color: transparent;
@@ -77,6 +81,14 @@
   }
 }
 
+.sorting-type__group--color .sorting-type__text,
+.sorting-type__group--tel .sorting-type__text,
+.sorting-type__group--email .sorting-type__text {
+  @media (min-width: @tablet-width) {
+    background-color: #f1f1f1;
+  }
+}
+
 .sorting-type__group--color {
   margin-bottom: 35px;
 
@@ -109,6 +121,13 @@
     width: 97px;
     margin-top: 4px;
   }
+}
+
+.sorting-type__text {
+  background-color: #ffffff;
+  z-index: 1;
+  padding-right: 22px;
+  position: relative;
 }
 
 .sorting-type__item {

@@ -66,7 +66,7 @@
     align-items: stretch;
     justify-content: space-between;
     padding: 128px 50px;
-    padding-bottom: 28px;
+    padding-bottom: 23px;
   }
 }
 
@@ -98,6 +98,7 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
+    height: 100%;
   }
 }
 
@@ -183,6 +184,7 @@
     width: auto;
     padding: 17px 27px;
     padding-bottom: 0;
+    flex-grow: 1;
   }
 }
 
@@ -199,16 +201,18 @@
   }
 }
 
+.good__product {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
 .good__buy {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
   border-top: 1px solid #ececec;
-
-  @media (min-width: @tablet-width) {
-    // margin-top: auto;
-  }
 }
 
 .catalog__button {
