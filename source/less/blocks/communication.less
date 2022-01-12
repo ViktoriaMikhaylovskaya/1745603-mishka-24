@@ -1,8 +1,75 @@
 .communication {
   padding: 0 30px;
+  margin-bottom: 23px;
 
   @media (min-width: @tablet-width) {
-    padding: 50px 50px;
+    padding: 35px 50px;
+    padding-bottom: 39px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 36px 110px;
+    padding-right: 225px;
+    padding-bottom: 42px;
+  }
+}
+
+.communication .sorting-type__title {
+  @media (min-width: @tablet-width) {
+    margin-top: 32px;
+    margin-right: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 34px;
+  }
+}
+
+.communication .sorting-type__title--tel {
+  @media (min-width: @tablet-width) {
+    margin-right: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    width: 101px;
+  }
+}
+
+.communication .sorting-type__title--email {
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    margin-right: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    width: 101px;
+  }
+}
+
+.communication .sorting-type__title--extra {
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 4px;
+  }
+}
+
+.communication__extra {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 34px;
   }
 }
 
@@ -16,6 +83,18 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 11px;
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 9.5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 11.5px;
+  }
 }
 
 .field__title {
@@ -24,6 +103,12 @@
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+    margin-right: 25px;
+  }
 }
 
 .communication__condition {
@@ -31,48 +116,125 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  margin: 0;
+  margin-top: 5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 2px;
+  }
 }
 
 .communication__text {
-  padding: 15px 0;
+  padding: 16px 0;
+  padding-bottom: 15px;
   border: none;
   border-bottom: 2px solid #000000;
+  font-size: 17px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
 
   @media (min-width: @tablet-width) {
     font-size: 19px;
     line-height: 18px;
+    padding: 17px 18px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 14px;
   }
 }
 
 .communication__text--tel,
 .communication__text--email {
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+
   @media (min-width: @tablet-width) {
     background-color: #f1f1f1;
-    background-repeat: no-repeat;
-    background-position: right;
   }
 }
 
 .communication__text--tel {
+  font-size: 15.5px;
+  letter-spacing: 0;
+  padding-top: 0;
+  padding-bottom: 16px;
+  margin-bottom: 12px;
+  background-image: url("../../img/communication-tel-icon.svg");
+
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/communication-tel-icon.svg");
+    padding-top: 17px;
+    padding-bottom: 15px;
+    font-size: 19px;
+    line-height: 18px;
+    letter-spacing: -1.3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 14px;
   }
 }
 
 .communication__text--email {
+  padding-top: 3px;
+  padding-bottom: 13px;
+  margin-bottom: 13px;
+  background-image: url("../../img/communication-e-mail-icon.svg");
+
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/communication-e-mail-icon.svg");
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 5px;
+    padding-bottom: 14px;
+  }
+}
+
+.sorting-type__group--email {
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 28px;
+  }
+}
+
+.sorting-type__group--tel {
+  padding-bottom: 0;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 34px;
   }
 }
 
 .additionally-text {
+  font-family: "Open Sans", "Arial", sans-serif;
   border: 2px solid #000000;
+  padding: 15px;
+  letter-spacing: 1.7px;
+  font-size: 17px;
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    font-size: 19px;
+    line-height: 18px;
+    letter-spacing: inherit;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .communication__bottom {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 0 30px;
   margin-bottom: 55px;
 
@@ -80,11 +242,24 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0 50px;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 225px;
   }
 }
 
 .communication__button {
+  margin-top: 31px;
+  padding: 13px 40px;
+
   @media (min-width: @tablet-width) {
     order: -1;
+    margin: 5px 0;
+    padding: 13px 26.5px;
+    padding-bottom: 15px;
+    letter-spacing: -0.2px;
   }
 }

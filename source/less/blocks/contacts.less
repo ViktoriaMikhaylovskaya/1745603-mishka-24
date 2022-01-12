@@ -8,12 +8,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
+    padding-bottom: 45px;
   }
 }
 
 .contacts__title {
+  position: relative;
   margin: 0;
-  padding: 30px;
+  padding: 60px 30px;
+  padding-bottom: 28px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 25px;
@@ -23,13 +26,37 @@
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    padding: 115px 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 239px;
+    padding-left: 224px;
+    padding-bottom: 36px;
+  }
+}
+
+.contacts__title::before {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 93px;
+    right: 54px;
+    content: url("../../img/flag.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 221px;
+    left: 113px;
   }
 }
 
 .contacts__list {
   padding: 0 30px;
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 34px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -38,21 +65,32 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    gap: 30px;
+    gap: 48px;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0 50px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
+    margin-left: 174px;
+    margin-bottom: 55px;
+    gap: 0;
   }
 }
 
 .contacts__item {
   display: flex;
+  margin-bottom: 28px;
 }
 
 .contacts__description {
+  margin-right: 32px;
+
   @media (min-width: @tablet-width) {
     min-width: 80px;
+    margin-right: 0;
   }
 }
 
@@ -61,7 +99,7 @@
 }
 
 .e-mail__text {
-  border-bottom: 2px solid #62d1ba;
+  border-bottom: 1px solid #62d1ba;
 }
 
 .contacts__link {
@@ -69,13 +107,19 @@
 }
 
 .contacts__map {
-  margin-bottom: 41px;
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 47px;
+  }
 
   @media (min-width: @desktop-width) {
     grid-row-start: 1;
     grid-row-end: -1;
     grid-column-start: 2;
     grid-column-end: 3;
+    margin-top: 160px;
+    margin-right: 50px;
   }
 }
 
@@ -84,6 +128,17 @@
 }
 
 .contacts__button {
-  margin: 0 auto;
+  margin: 0 30px;
   margin-bottom: 39px;
+  padding: 14px 27px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 57px;
+    width: 230px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 225px;
+  }
 }
