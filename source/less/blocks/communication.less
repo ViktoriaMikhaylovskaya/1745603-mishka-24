@@ -1,16 +1,15 @@
 .communication {
-  padding: 0 30px;
   margin-bottom: 23px;
 
   @media (min-width: @tablet-width) {
-    padding: 35px 50px;
+    padding: 35px 0;
     padding-bottom: 39px;
     margin: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 36px 110px;
-    padding-right: 225px;
+    padding: 36px 0;
+    padding-right: 175px;
     padding-bottom: 42px;
   }
 }
@@ -129,6 +128,7 @@
 .communication__text {
   padding: 16px 0;
   padding-bottom: 15px;
+  outline: none;
   border: none;
   border-bottom: 2px solid #000000;
   font-size: 17px;
@@ -146,6 +146,16 @@
   @media (min-width: @desktop-width) {
     padding-bottom: 14px;
   }
+}
+
+.communication__text:hover,
+.communication__text:focus {
+  border-bottom: 2px solid #62d1ba;
+  box-shadow: inset 0 -2px 0 #62d1ba;
+}
+
+.communication__text:active {
+  border-bottom: 2px solid #62d1ba;
 }
 
 .communication__text--tel,
@@ -231,23 +241,36 @@
   }
 }
 
+.communication__text .additionally-text,
+.communication__text:focus {
+  border: 2px solid #000000;
+  box-shadow: none;
+}
+
+.additionally-text:hover,
+.additionally-text:active {
+  border-bottom: none;
+  border: 2px solid #62d1ba;
+  box-shadow: none;
+}
+
 .communication__bottom {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 30px;
   margin-bottom: 55px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 50px;
     align-items: center;
     margin-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 225px;
+    // padding: 0 125px;
+    padding-left: 115px;
+    padding-right: 175px;
   }
 }
 

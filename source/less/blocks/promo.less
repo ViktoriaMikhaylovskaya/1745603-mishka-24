@@ -1,3 +1,7 @@
+.promo {
+  background-color: #fafafa;
+}
+
 .promo__title {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
@@ -10,14 +14,14 @@
   padding-bottom: 30.5px;
   min-height: 180px;
   text-align: center;
-  background-color: #ffffff;
-  background-image: url("../../img/promo-background-mobile.jpg");
+  background-color: #fafafa;
+  background-image: url("../img/promo-background-mobile.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/promo-background-tablet.jpg");
+    background-image: url("../img/promo-background-tablet.jpg");
     height: 400px;
     background-repeat: no-repeat;
     font-size: 43px;
@@ -28,7 +32,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../../img/promo-background-desktop.jpg");
+    background-image: url("../img/promo-background-desktop.jpg");
     font-size: 53px;
     line-height: 57px;
     padding: 158px 225px;
@@ -39,14 +43,15 @@
 
 .promo__list {
   position: relative;
+  background-color: #fafafa;
 
   @media (min-width: @tablet-width) {
-    min-width: @tablet-width;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: @desktop-width;
     display: flex;
   }
 }
@@ -55,20 +60,18 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 108px;
-    content: url("../../img/zigzag-tablet-promo.svg");
+    content: url("../img/zigzag-tablet-promo.svg");
   }
 
   @media (min-width: @desktop-width) {
     top: 102px;
-    content: url("../../img/zigzag-desktop-promo.svg");
+    content: url("../img/zigzag-desktop-promo.svg");
   }
 }
 
 .promo__item {
   padding: 23px 30px;
   padding-bottom: 19px;
-  display: flex;
-  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
@@ -93,26 +96,10 @@
 
 .promo__interior {
   background-color: #63d1bb;
-
-  @media (min-width: @tablet-width) {
-    margin-left: 50px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: 50px;
-  }
 }
 
 .promo__kids-toys {
   background-color: #56c3b2;
-
-  @media (min-width: @tablet-width) {
-    margin-right: 50px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: 50px;
-  }
 }
 
 .promo__link {
@@ -122,9 +109,27 @@
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.promo__link svg {
+  opacity: 0.5;
+}
+
+.promo__link:active svg,
+.promo__link:hover svg {
+  opacity: 0.7;
+  height: 67px;
+  margin-top: -5px;
+}
+
+.promo__link:disabled svg {
+  opacity: 0.3;
 }

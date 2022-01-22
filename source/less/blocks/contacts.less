@@ -1,14 +1,8 @@
 .contacts {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   background-color: #ffffff;
 
-  @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    padding-bottom: 45px;
+  @media (min-width: @tablet-width) {
+    padding-top: 68px;
   }
 }
 
@@ -26,15 +20,14 @@
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    padding: 115px 50px;
-    padding-bottom: 50px;
+    padding: 0 50px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 239px;
-    padding-left: 224px;
+    padding-left: 0;
     padding-bottom: 36px;
   }
 }
@@ -42,14 +35,14 @@
 .contacts__title::before {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 93px;
+    top: 0;
     right: 54px;
-    content: url("../../img/flag.svg");
+    content: url("../img/flag.svg");
   }
 
   @media (min-width: @desktop-width) {
-    top: 221px;
-    left: 113px;
+    top: 0;
+    left: -120px;
   }
 }
 
@@ -74,7 +67,7 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
-    margin-left: 174px;
+    padding: 0;
     margin-bottom: 55px;
     gap: 0;
   }
@@ -102,6 +95,16 @@
   border-bottom: 1px solid #62d1ba;
 }
 
+.e-mail__text:active,
+.e-mail__text:hover {
+  color: #46c1ae;
+}
+
+.e-mail__text:active {
+  color: #46c1ae;
+  border-bottom: #ffffff;
+}
+
 .contacts__link {
   .link-reset;
 }
@@ -118,8 +121,7 @@
     grid-row-end: -1;
     grid-column-start: 2;
     grid-column-end: 3;
-    margin-top: 160px;
-    margin-right: 50px;
+    margin: 0;
   }
 }
 
@@ -137,8 +139,13 @@
     margin-bottom: 57px;
     width: 230px;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    margin-left: 225px;
-  }
+.contacts__button:hover .contacts__link,
+.contacts__button:active .contacts__link {
+  color: #ffffff;
+}
+
+.contacts__button:active .contacts__link {
+  color: rgba(255, 255, 255, 0.3);
 }

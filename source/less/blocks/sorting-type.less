@@ -1,11 +1,10 @@
 .sorting-type__group {
   border: none;
   margin-bottom: 32px;
-  padding: 0 30px;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 49px 50px;
+    padding: 49px 0;
     padding-bottom: 59px;
     margin-bottom: 0;
     display: flex;
@@ -14,7 +13,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 49px 110px;
+    padding: 49px 10px;
     padding-bottom: 58px;
   }
 }
@@ -260,4 +259,16 @@
     top: 14px;
     left: 8px;
   }
+}
+
+// состояния
+
+.sorting-type__control:hover .control-mark__radio,
+.sorting-type__control:hover .control-mark__checkbox {
+  border: 2px solid #62d1ba;
+}
+
+.sorting-type__control:active .control-mark__radio,
+.sorting-type__control:hover .control-mark__checkbox {
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
