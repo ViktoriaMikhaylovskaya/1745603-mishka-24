@@ -164,23 +164,6 @@
       </div>
     </header>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
-
     <main class="main">
       <h1 class="visually-hidden">"Мишка" - магазин предметов ручной работы для дома</h1>
       <section class="promo">
@@ -384,6 +367,23 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container modal">
+      <div class="container__modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <ul class="modal__list">
+          <li class="modal__item modal__item--checked">S</li>
+          <li class="modal__item">M</li>
+          <li class="modal__item">L</li>
+        </ul>
+        <button class="modal__button" type="button">
+          Добавить
+        </button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>
