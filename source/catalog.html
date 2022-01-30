@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Мишка - магазин предметов ручной работы для дома.">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/build/css/style.min.css">
+    <link rel="icon" type="image/svg" sizes="32x32" href="../source/img/favicon.svg">
   </head>
   <body>
     <svg width="0" height="0" class="hidden">
@@ -182,11 +184,10 @@
                   <picture>
                     <source media="(min-width: 1150px)" srcset="img/product-rabbit-desktop.jpg 1x, img/product-rabbit-desktop@2x.jpg 2x" width="316" height="462">
                     <source media="(min-width: 768px)" srcset="img/product-rabbit-tablet.jpg 1x, img/product-rabbit-tablet@2x.jpg 2x" width="334" height="324">
-                    <img class="good__img" src="img/product-rabbit-mobile.jpg" srcset="img/product-rabbit-mobile@2x.jpg" alt="Фото вязаного зайца" width="260" height="195">
+                    <img class="good__img" src="img/product-rabbit-mobile.jpg" srcset="img/product-rabbit-mobile@2x.jpg" loading="lazy" alt="Фото вязаного зайца" width="260" height="195">
                   </picture>
                   <div class="good__info">
                     <div class="good__product">
-                      <!-- <a><h3 class="good__title">Зайчик-попрыгайчик</h3></a> -->
                       <h3 class="good__title">Зайчик-попрыгайчик</h3>
                       <p class="good__text">Рост 30 см, вес 200 г</p>
                     </div>
@@ -207,7 +208,7 @@
                   <picture>
                     <source media="(min-width: 1150px)" srcset="img/product--laundry-basket-desktop.jpg 1x, img/product--laundry-basket-desktop@2x.jpg 2x" width="316" height="462">
                     <source media="(min-width: 768px)" srcset="img/product--laundry-basket-tablet.jpg 1x, img/product--laundry-basket-tablet@2x.jpg 2x" width="334" height="324">
-                    <img class="good__img" src="img/product--laundry-basket-mobile.jpg" srcset="img/product--laundry-basket-mobile@2x.jpg" alt="Корзинка для белья" width="260" height="195">
+                    <img class="good__img" src="img/product--laundry-basket-mobile.jpg" srcset="img/product--laundry-basket-mobile@2x.jpg" loading="lazy" alt="Корзинка для белья" width="260" height="195">
                   </picture>
                   <div class="good__info">
                     <div class="good__product">
@@ -231,7 +232,7 @@
                   <picture>
                     <source media="(min-width: 1150px)" srcset="img/product-large-busket-desktop.jpg 1x, img/product-large-busket-desktop@2x.jpg 2x" width="316" height="462">
                     <source media="(min-width: 768px)" srcset="img/product-large-busket-tablet.jpg 1x, img/product-large-busket-tablet@2x.jpg 2x" width="334" height="324">
-                    <img class="good__img" src="img/product-large-busket-mobile.jpg" srcset="img/product-large-busket-mobile@2x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+                    <img class="good__img" src="img/product-large-busket-mobile.jpg" srcset="img/product-large-busket-mobile@2x.jpg" loading="lazy" alt="Большая корзинка для игрушек" width="260" height="195">
                   </picture>
                   <div class="good__info good__info--big-busket">
                     <div class="good__product">
@@ -263,7 +264,7 @@
                 </svg>
                 <h3 class="video__tittle">Процесс производства</h3>
               </div>
-              <button class="video__image">
+              <button class="video__image" type="button">
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/product-video-busket-desktop.jpg 1x, img/product-video-busket-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/product-video-busket-tablet.jpg 1x, img/product-video-busket-tablet@2x.jpg 2x">
@@ -316,13 +317,48 @@
         <div class="footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="icon" width="27" height="34">
-              <use xlink:href="#htmlacademy"></use>
+            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6506 0H13.5502L0 1.39589V26.0235L13.5502 34L27 26.0235V1.39589L13.6506 0ZM25.0929 12.0645L13.5502 5.28446V5.18475H13.4498L13.3494 5.08504V5.18475L1.90706 12.0645V3.09091L13.4498 1.89443L25.0929 3.09091V12.0645ZM13.4498 6.78006L24.9926 13.4604L20.4758 16.0528L13.3494 11.8651V13.261L19.2714 16.7507L18.368 17.2493L13.3494 14.2581V15.654L17.1636 17.9472L16.3606 18.4457L13.3494 16.651V18.0469L15.2565 19.1437L13.4498 20.2405L2.00744 13.5601L13.4498 6.78006ZM1.90706 15.0557L13.3494 21.8358V22.8328L5.42007 18.1466V19.5425L13.4498 24.3284V25.4252L5.42007 20.739V22.1349L13.4498 26.9208L21.5799 22.0352V16.8504L24.9926 14.8563V24.827L13.4498 31.7067L1.90706 24.9267V15.0557Z" fill="#63D1BB"/>
             </svg>
           </a>
         </div>
       </div>
     </footer>
+
+    <div class="modal-container modal">
+      <div class="container__modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form action="https://echo.htmlacademy.ru/" method="POST">
+          <ul class="modal__list">
+            <li class="modal__item">
+              <label class="control" tabindex="0">
+                <input class="visually-hidden control__radio-input" type="radio" name="type" value="Size S">
+                <span class="modal__item--radio">S</span>
+                <span class="visually-hidden">Размер S</span>
+              </label>
+            </li>
+            <li class="modal__item">
+              <label class="control" tabindex="0">
+                <input class="visually-hidden control__radio-input" type="radio" name="type" value="Size M">
+                <span class="modal__item--radio">M</span>
+                <span class="visually-hidden">Размер M</span>
+              </label>
+            </li>
+            <li class="modal__item">
+              <label class="control" tabindex="0">
+                <input class="visually-hidden control__radio-input" type="radio" name="type" value="Size L">
+                <span class="modal__item--radio">L</span>
+                <span class="visually-hidden">Размер L</span>
+              </label>
+            </li>
+          </ul>
+          <button class="modal__button button" type="submit">
+            Добавить
+          </button>
+        </form>
+      </div>
+    </div>
 
     <script src="js/script.js"></script>
   </body>

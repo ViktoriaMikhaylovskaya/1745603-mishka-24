@@ -25,6 +25,7 @@
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-top: 0;
   }
 }
 
@@ -38,14 +39,14 @@
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: -1;
-    margin-top: 25px;
+    margin-top: 24px;
     margin-bottom: 61px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 23px;
+    margin-top: 20px;
     margin-right: 65px;
-    margin-bottom: 46px;
+    margin-bottom: 44px;
   }
 }
 
@@ -71,6 +72,10 @@
     line-height: 24px;
     margin-bottom: 6px;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+   }
 }
 
 .reviews__email {
@@ -81,7 +86,7 @@
 
 .reviews__button {
   display: flex;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
   justify-content: center;
 
   @media (min-width: @tablet-width) {
@@ -105,16 +110,18 @@
   width: 130px;
   border: 1px solid #ececec;
   background-color: #ffffff;
-  padding: 13px 38px;
+  padding-top: 7px;
+  padding-right: 10px;
 
   @media (min-width: @tablet-width) {
     border: none;
-    padding: 16px 0;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 95px;
-    padding: 13px 40px;
+    padding-top: 9px;
+    padding-right: 5px;
   }
 }
 
@@ -131,7 +138,11 @@
   transform: rotate(180deg);
 
   @media (min-width: @tablet-width) {
-    margin-left: 10px;
+    margin-left: 0px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: -10px;
   }
 }
 

@@ -31,8 +31,9 @@ export const styles = () => {
 
 // HTML
 
-const html = () => {
+export const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -70,7 +71,7 @@ export const createWebp = () => {
 // SVG
 
 const svg = () =>
-  gulp.src(['source/img/*.svg', '!source/img/*.svg'])
+  gulp.src(['source/img/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 

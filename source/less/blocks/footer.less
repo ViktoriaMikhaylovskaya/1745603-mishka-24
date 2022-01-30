@@ -5,10 +5,10 @@
 
 .footer__logo {
   display: none;
+  fill: #000000;
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 175px;
     height: auto;
   }
 
@@ -16,6 +16,14 @@
     width: 140px;
     height: auto;
   }
+}
+
+.footer__logo:hover path {
+  fill: #46c1ae;
+}
+
+.footer__logo:active {
+  opacity: 0.3;
 }
 
 .footer__social {
@@ -38,10 +46,19 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 7px;
+  }
 }
 
 .social__link {
   padding: 20px;
+}
+
+.social__link:hover {
+  stroke: #46c1ae;
+  fill: #46c1ae;
 }
 
 .footer__copyright {
@@ -61,6 +78,7 @@
   font-size: 19px;
   line-height: 18px;
   color: #000000;
+  margin-right: 27px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -68,8 +86,11 @@
 }
 
 .copyright__link {
+  margin-top: 5px;
+  fill: #63d1bb;
+
   @media (min-width: @tablet-width) {
-    margin-left: 9px;
+    margin-left: 27px;
     height: 40px;
   }
 
@@ -78,7 +99,16 @@
   }
 }
 
-.copyright__link .svg {
-  width: 45px;
-  height: 39px;
+.copyright__link:hover svg path{
+  fill: #46c1ae;
 }
+
+.copyright__link:active svg {
+  opacity: 0.3;
+}
+
+// svg path {
+//   stroke:inherit;
+//   stroke-width:inherit;
+//   fill:inherit;
+// }

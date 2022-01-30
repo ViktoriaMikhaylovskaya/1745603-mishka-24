@@ -43,6 +43,7 @@
 
   @media (min-width: @desktop-width) {
     bottom: -25px;
+    left: -50px;
     content: url("../img/zigzag-catalog-desktop.svg");
   }
 }
@@ -168,6 +169,15 @@
     padding-right: 5px;
     padding-bottom: 31px;
   }
+}
+
+.good__button:hover svg,
+.good__button:focus svg  {
+  stroke: #63d1bb;
+}
+
+.good__button:active svg {
+  opacity: 0.3;
 }
 
 .good__img {
