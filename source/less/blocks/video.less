@@ -25,13 +25,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 23px;
+  padding: 20px;
   padding-bottom: 26px;
   margin-left: 24px;
 
   @media (min-width: @tablet-width) {
     padding: 20px 40px;
-    padding-top: 39px;
+    padding-top: 36px;
     order: 1;
     align-self: flex-start;
     margin: 0;
@@ -71,13 +71,14 @@
   content: url("../img/play.svg");
 }
 
-.video__image:hover .video__image::before {
-  opacity: 0.5;
+.video__image:hover::before {
+  transform: scale(1.2) translate(-50%, -50%);
 }
 
-// .video__image:active .video__image::before {
-//   opacity: 0.5;
-// }
+.video__image:active::before {
+  opacity: 0.5;
+  transform: scale(0.8) translate(-50%, -50%);
+}
 
 .video__img {
   width: 100%;

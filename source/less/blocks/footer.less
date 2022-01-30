@@ -5,11 +5,11 @@
 
 .footer__logo {
   display: none;
-  fill: #000000;
 
   @media (min-width: @tablet-width) {
     display: block;
     height: auto;
+    margin-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -18,11 +18,16 @@
   }
 }
 
-.footer__logo:hover path {
-  fill: #46c1ae;
+.footer__logo .icon {
+  fill: #000000;
 }
 
-.footer__logo:active {
+.footer__logo:hover .icon {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.footer__logo:active .icon {
   opacity: 0.3;
 }
 
@@ -56,9 +61,17 @@
   padding: 20px;
 }
 
-.social__link:hover {
-  stroke: #46c1ae;
+.social__link .icon {
+  fill: #000000;
+}
+
+.social__link:hover .icon {
   fill: #46c1ae;
+}
+
+.social__link:active .icon {
+  fill: #46c1ae;
+  opacity: 0.3;
 }
 
 .footer__copyright {
@@ -86,16 +99,16 @@
 }
 
 .copyright__link {
-  margin-top: 5px;
+  padding-top: 5px;
   fill: #63d1bb;
 
   @media (min-width: @tablet-width) {
-    margin-left: 27px;
+    padding-left: 27px;
     height: 40px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 10px;
+    padding-left: 30px;
   }
 }
 
@@ -107,8 +120,3 @@
   opacity: 0.3;
 }
 
-// svg path {
-//   stroke:inherit;
-//   stroke-width:inherit;
-//   fill:inherit;
-// }

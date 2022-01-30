@@ -37,14 +37,14 @@
 .contacts__title::before {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 0;
-    right: 54px;
+    top: -24px;
+    right: 53px;
     content: url("../img/flag.svg");
   }
 
   @media (min-width: @desktop-width) {
-    top: 0;
-    left: -120px;
+    top: -16px;
+    left: -111px;
   }
 }
 
@@ -70,7 +70,7 @@
   @media (min-width: @desktop-width) {
     flex-direction: column;
     padding: 0;
-    margin-bottom: 55px;
+    margin-bottom: 54px;
     gap: 0;
   }
 }
@@ -150,6 +150,10 @@
     margin: 0 auto;
     margin-bottom: 57px;
     width: 230px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 

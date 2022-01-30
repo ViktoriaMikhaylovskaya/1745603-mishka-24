@@ -3,14 +3,14 @@
 
   @media (min-width: @tablet-width) {
     padding: 35px 0;
-    padding-bottom: 39px;
+    padding-bottom: 41px;
     margin: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 36px 0;
+    padding: 36px 61px;
     padding-right: 175px;
-    padding-bottom: 42px;
+    padding-bottom: 40.5px;
   }
 }
 
@@ -26,6 +26,7 @@
 }
 
 .communication .sorting-type__title--tel {
+  margin-bottom: 0px;
   @media (min-width: @tablet-width) {
     margin-right: 9px;
   }
@@ -37,6 +38,7 @@
 }
 
 .communication .sorting-type__title--email {
+  margin-bottom: 0;
   @media (min-width: @tablet-width) {
     margin-top: 20px;
     margin-right: 9px;
@@ -68,7 +70,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 34px;
+    padding-bottom: 38px;
   }
 }
 
@@ -84,7 +86,6 @@
   width: 100%;
   margin-top: 11px;
   margin-bottom: 12px;
-  // position: relative;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -93,7 +94,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 11.5px;
+    margin-top: 10px;
   }
 }
 
@@ -128,7 +129,7 @@
 
 .communication__text {
   padding: 16px 0;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   outline: none;
   border: 2px solid transparent;
   border-bottom: 2px solid #000000;
@@ -141,12 +142,12 @@
     font-size: 19px;
     line-height: 18px;
     padding: 17px 18px;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
     width: 100%;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 14px;
+    padding-bottom: 13px;
   }
 }
 
@@ -162,6 +163,8 @@
 
 .communication__text--tel,
 .communication__text--email {
+  width: inherit;
+
   @media (min-width: @tablet-width) {
     background-color: #f1f1f1;
   }
@@ -170,9 +173,9 @@
 .communication__text--tel {
   font-size: 15.5px;
   letter-spacing: 0;
-  padding-top: 0;
-  padding-bottom: 16px;
-  margin-bottom: 12px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
     padding-top: 17px;
@@ -180,6 +183,7 @@
     font-size: 19px;
     line-height: 18px;
     letter-spacing: -1.3px;
+    margin-top: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -188,12 +192,12 @@
 }
 
 .communication__text--email {
-  padding-top: 3px;
-  padding-bottom: 13px;
+  padding-top: 8px;
+  padding-bottom: 14px;
   margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 15px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: @desktop-width) {
@@ -202,50 +206,80 @@
   }
 }
 
-// .field__tel {
-//   position: relative;
-// }
+.field__email .field__title,
+.field__tel .field__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: inherit;
+  position: relative;
+  margin: 0;
 
-// .field__tel::after{
-//     position: absolute;
-//     top: 5px;
-//     right: 10px;
-//     content:  url("../img/communication-tel-icon.svg");
-// }
+  @media (min-width: @tablet-width) {
+    margin-left: 24px;
+  }
+}
 
-// .field__email {
-//   position: relative;
-// }
+.field__tel {
+  margin-top: 0;
+}
 
-// .field__email::after{
-//     position: absolute;
-//     top: 5px;
-//     right: 10px;
-//     content:  url("../img/communication-e-mail-icon.svg");
-// }
+.communication__icon {
+  position: absolute;
+  right: 8px;
+  top: 15px;
+  fill: #000000;
+  opacity: 0.2;
 
-// .communication__text:hover .field-tel,
-// .communication__text:focus .field-tel,
-// .communication__text:hover .field-email,
-// .communication__text:focus .field-email  {
-//   stroke: red;
-// }
+  @media (min-width: @tablet-width) {
+    top: 28px;
+    right: 27px;
+  }
 
-.communication__tel-icon:hover,
-.communication__email-icon:hover {
-  stroke: red;
-  fill: red;
+  @media (min-width: @desktop-width) {
+    right: 9px;
+  }
+}
+
+.communication__icon--email {
+  right: 4px;
+  top: 8px;
+
+  @media (min-width: @tablet-width) {
+    top: 13px;
+    right: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 5px;
+  }
+}
+
+.communication__icon:hover,
+.communication__icon:active {
+  fill: #62d1ba;
+  opacity: 1;
 }
 
 .sorting-type__group--email {
   @media (min-width: @tablet-width) {
     padding-top: 0;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
   }
+}
+
+.sorting-type__group--email .field {
+  margin-top: 6px;
 }
 
 .sorting-type__group--tel {
   padding-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 33px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-top: 34px;
@@ -256,7 +290,7 @@
   font-family: "Open Sans", "Arial", sans-serif;
   border: 2px solid #000000;
   padding: 15px;
-  letter-spacing: 1.7px;
+  letter-spacing: 0;
   font-size: 17px;
   line-height: 18px;
 
@@ -272,10 +306,13 @@
   }
 }
 
-.communication__text .additionally-text,
-.communication__text:focus {
+.communication__text .additionally-text {
   border: 2px solid #000000;
   box-shadow: none;
+}
+
+.communication__text:focus  {
+  border: 2px solid #62d1ba;
 }
 
 .additionally-text:hover,
@@ -289,30 +326,32 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 55px;
+  margin-bottom: 56.5px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 115px;
+    padding-left: 175px;
     padding-right: 175px;
   }
 }
 
 .communication__button {
-  margin-top: 31px;
-  padding: 13px 40px;
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 17px;
+  line-height: 16px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
+    width: 230px;
     order: -1;
-    margin: 5px 0;
-    padding: 13px 26.5px;
-    padding-bottom: 15px;
-    letter-spacing: -0.2px;
+    margin: 3px 0;
+    padding: 16px 26.5px;
   }
 }

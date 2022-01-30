@@ -186,10 +186,9 @@
 //   opacity: 0.6;
 // }
 
-.main-nav__link:hover svg {
-  fill: #63d1bb;
-  stroke: #63d1bb;
-}
+// .main-nav__link:hover svg {
+//   fill: #63d1bb;
+// }
 
 .main-nav__busket {
   padding-right: 25px;
@@ -199,9 +198,19 @@
   }
 }
 
-// .main-nav__busket:hover {
-//   fill: red;
-// }
+.main-nav__link .icon {
+  fill: #000000;
+  opacity: 0.2;
+}
+
+.main-nav__link:hover .icon {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.main-nav__link:active .icon {
+  opacity: 0.3;
+}
 
 .site__item .main-nav__link {
   @media (min-width: @tablet-width) {

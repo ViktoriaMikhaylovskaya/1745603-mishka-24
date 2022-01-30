@@ -13,8 +13,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 49px 10px;
-    padding-bottom: 58px;
+    padding: 49px 62px;
+    padding-bottom: 14px;
   }
 }
 
@@ -22,7 +22,7 @@
   position: absolute;
   top: 8px;
   height: 1px;
-  right: 30px;
+  right: 0;
   background-color: #62d1ba;
   width: 200px;
   content: "";
@@ -53,20 +53,23 @@
 .sorting-type__list--type {
   @media (min-width: @tablet-width) {
     flex-direction: column;
+    row-gap: 60px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 19px;
+    row-gap: 15px;
   }
 }
 
 .sorting-type__list--color {
   @media (min-width: @tablet-width) {
-    margin-left: 97px;
+    margin-left: 86px;
+    column-gap: 56px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 46px;
+    margin-left: 32px;
     gap: 50px;
     column-gap: 58px;
   }
@@ -89,7 +92,7 @@
 }
 
 .sorting-type__group--color {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 
   @media (min-width: @tablet-width) {
     padding-top: 66px;
@@ -221,7 +224,7 @@
     margin: 0;
     font-size: 19px;
     line-height: 18px;
-    padding: 19px 0;
+    padding: 14px 0;
 
     @media (min-width: @desktop-width) {
       padding: 15px 0;
@@ -232,7 +235,7 @@
 //  Чекбоксы
 .control-mark__checkbox {
   position: absolute;
-  top: 4px;
+  top: 6px;
   left: 0;
   width: 33.5px;
   height: 33.5px;
@@ -253,10 +256,10 @@
 }
 
 .control-input:checked + .control-mark__checkbox::before {
-  content: url("../../img/checkbox-active-mobile.svg");
+  content: url("../img/checkbox-active-mobile.svg");
 
   @media (min-width: @tablet-width) {
-    content: url("../../img/checkbox-active-tablet.svg");
+    content: url("../img/checkbox-active-tablet.svg");
     top: 14px;
     left: 8px;
   }
