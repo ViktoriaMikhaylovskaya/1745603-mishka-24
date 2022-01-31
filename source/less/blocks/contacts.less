@@ -2,7 +2,7 @@
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
-    padding-top: 68px;
+    padding-top: 61px;
   }
 }
 
@@ -21,28 +21,30 @@
     font-size: 43px;
     line-height: 50px;
     padding: 0 50px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
     padding-left: 0;
-    padding-bottom: 36px;
+    padding-bottom: 0px;
+    margin-top: 80px;
+    margin-bottom: 35px;
   }
 }
 
 .contacts__title::before {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 0;
-    right: 54px;
+    top: -24px;
+    right: 53px;
     content: url("../img/flag.svg");
   }
 
   @media (min-width: @desktop-width) {
-    top: 0;
-    left: -120px;
+    top: -16px;
+    left: -111px;
   }
 }
 
@@ -68,7 +70,7 @@
   @media (min-width: @desktop-width) {
     flex-direction: column;
     padding: 0;
-    margin-bottom: 55px;
+    margin-bottom: 54px;
     gap: 0;
   }
 }
@@ -93,6 +95,14 @@
 
 .e-mail__text {
   border-bottom: 1px solid #62d1ba;
+
+  @media (min-width: @tablet-width) {
+    height: max-content;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 4px;
+  }
 }
 
 .e-mail__text:active,
@@ -107,13 +117,15 @@
 
 .contacts__link {
   .link-reset;
+  font-size: 17px;
+  line-height: 20px;
 }
 
 .contacts__map {
   margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: @desktop-width) {
@@ -138,6 +150,10 @@
     margin: 0 auto;
     margin-bottom: 57px;
     width: 230px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 

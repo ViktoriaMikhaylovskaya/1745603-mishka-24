@@ -26,8 +26,8 @@
     background-repeat: no-repeat;
     font-size: 43px;
     line-height: 50px;
-    padding: 154px 50px;
-    padding-bottom: 71px;
+    padding: 155px 50px;
+    padding-bottom: 71.5px;
     margin-top: -57px;
   }
 
@@ -49,6 +49,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding: 0 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -59,7 +60,8 @@
 .promo__list::before {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 108px;
+    top: 107px;
+    left: 0;
     content: url("../img/zigzag-tablet-promo.svg");
   }
 
@@ -70,12 +72,12 @@
 }
 
 .promo__item {
-  padding: 23px 30px;
-  padding-bottom: 19px;
+  padding: 24px 30px;
+  padding-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
-    padding: 28px 36px;
+    padding: 26px 36px;
     padding-bottom: 32px;
   }
 
@@ -100,6 +102,7 @@
 
 .promo__kids-toys {
   background-color: #56c3b2;
+  padding-bottom: 19px
 }
 
 .promo__link {
@@ -126,8 +129,19 @@
 .promo__link:active svg,
 .promo__link:hover svg {
   opacity: 0.7;
-  height: 67px;
-  margin-top: -5px;
+  height: 120%;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -5px;
+  }
+}
+
+.promo__interior .promo__link:hover {
+  padding-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 2px;
+  }
 }
 
 .promo__link:disabled svg {
