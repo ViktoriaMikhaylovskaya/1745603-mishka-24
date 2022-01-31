@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Мишка - магазин предметов ручной работы для дома.">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="icon" type="image/svg" sizes="32x32" href="favicon.svg">
+    <link rel="preload" href="./fonts/opensans.woff2" as="font">
   </head>
   <body>
     <svg width="0" height="0" class="hidden">
@@ -171,115 +172,109 @@
     </header>
 
     <main class="main">
-        <h1 class="visually-hidden">"Мишка" - магазин предметов ручной работы для дома</h1>
-        <section class="catalog-title">
-          <div class="container container__catalog-title">
-            <h2 class="catalog__title">Каталог товаров</h2>
-          </div>
-        </section>
-        <section class="catalog">
-          <div class="container container__catalog">
-            <div class="catalog__list ">
-              <article class="catalog__item good">
-                <a class="good__link" href="#">
-                  <picture>
-                    <source media="(min-width: 1150px)" srcset="img/product-rabbit-desktop.jpg 1x, img/product-rabbit-desktop@2x.jpg 2x" width="316" height="462">
-                    <source media="(min-width: 768px)" srcset="img/product-rabbit-tablet.jpg 1x, img/product-rabbit-tablet@2x.jpg 2x" width="334" height="331">
-                    <img class="good__img" src="img/product-rabbit-mobile.jpg" srcset="img/product-rabbit-mobile@2x.jpg" loading="lazy" alt="Фото вязаного зайца" width="260" height="195">
-                  </picture>
-                  <div class="good__info">
-                    <div class="good__product">
-                      <h3 class="good__title">Зайчик-попрыгайчик</h3>
-                      <p class="good__text">Рост 30 см, вес 200 г</p>
-                    </div>
-                    <div class="good__buy">
-                      <b class="good_price">1 200 руб.</b>
-                      <button class="good__button" type="button">
-                        <span class="visually-hidden">Добавить в корзину</span>
-                        <svg class="icon" width="21" height="18">
-                          <use xlink:href="#cart"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </a>
-              </article>
-              <article class="catalog__item good">
-                <a class="good__link" href="#">
-                  <picture>
-                    <source media="(min-width: 1150px)" srcset="img/product--laundry-basket-desktop.jpg 1x, img/product--laundry-basket-desktop@2x.jpg 2x" width="316" height="462">
-                    <source media="(min-width: 768px)" srcset="img/product--laundry-basket-tablet.jpg 1x, img/product--laundry-basket-tablet@2x.jpg 2x" width="334" height="331">
-                    <img class="good__img" src="img/product--laundry-basket-mobile.jpg" srcset="img/product--laundry-basket-mobile@2x.jpg" loading="lazy" alt="Корзинка для белья" width="260" height="195">
-                  </picture>
-                  <div class="good__info">
-                    <div class="good__product">
-                      <h3 class="good__title">Корзинка для белья</h3>
-                      <p class="good__text good__text--busket">Диаметр 15 см, высота 10 см</p>
-                    </div>
-                    <div class="good__buy">
-                      <b class="good_price">690 руб.</b>
-                      <button class="good__button" type="button">
-                        <span class="visually-hidden">Добавить в корзину</span>
-                        <svg class="icon" width="21" height="18">
-                          <use xlink:href="#cart"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </a>
-              </article>
-              <article class="catalog__item good">
-                <a class="good__link" href="#">
-                  <picture>
-                    <source media="(min-width: 1150px)" srcset="img/product-large-busket-desktop.jpg 1x, img/product-large-busket-desktop@2x.jpg 2x" width="316" height="462">
-                    <source media="(min-width: 768px)" srcset="img/product-large-busket-tablet.jpg 1x, img/product-large-busket-tablet@2x.jpg 2x" width="334" height="332">
-                    <img class="good__img" src="img/product-large-busket-mobile.jpg" srcset="img/product-large-busket-mobile@2x.jpg" loading="lazy" alt="Большая корзинка для игрушек" width="260" height="195">
-                  </picture>
-                  <div class="good__info good__info--big-busket">
-                    <div class="good__product">
-                      <h3 class="good__title">Большая корзинка <br> для игрушек</h3>
-                      <p class="good__text good__text--big-busket">Диаметр 30 см, высота 30 см</p>
-                    </div>
-                    <div class="good__buy">
-                      <b class="good_price">1 500 руб.</b>
-                      <button class="good__button" type="button">
-                        <span class="visually-hidden">Добавить в корзину</span>
-                        <svg class="icon" width="21" height="18">
-                          <use xlink:href="#cart"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </a>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="video">
-          <div class="container container__video">
-            <div class="video__main-container">
-              <div class="video__wrap">
-                <svg class="icon" width="32" height="22">
-                  <use xlink:href="#video-icon"></use>
-                </svg>
-                <h3 class="video__tittle">Процесс производства</h3>
+      <h1 class="visually-hidden">"Мишка" - магазин предметов ручной работы для дома</h1>
+      <section class="catalog-title">
+        <div class="container container__catalog-title">
+          <h2 class="catalog__title">Каталог товаров</h2>
+        </div>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">"Каталог товаров магазина предметов ручной работы для дома.</h2>
+        <div class="container container__catalog">
+          <div class="catalog__list ">
+            <article class="catalog__item good">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/product-rabbit-desktop.jpg 1x, img/product-rabbit-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-rabbit-tablet.jpg 1x, img/product-rabbit-tablet@2x.jpg 2x">
+                <img class="good__img" src="img/product-rabbit-mobile.jpg" srcset="img/product-rabbit-mobile@2x.jpg" loading="lazy" alt="Фото вязаного зайца" width="260" height="195">
+              </picture>
+              <div class="good__info">
+                <div class="good__product">
+                  <h3 class="good__title">Зайчик-попрыгайчик</h3>
+                  <p class="good__text">Рост 30 см, вес 200 г</p>
+                </div>
+                <div class="good__buy">
+                  <b class="good_price">1 200 руб.</b>
+                  <button class="good__button" type="button">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                    <svg class="icon" width="21" height="18">
+                      <use xlink:href="#cart"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
-              <button class="video__image" type="button">
-                <picture>
-                  <source media="(min-width: 1150px)" srcset="img/product-video-busket-desktop.jpg 1x, img/product-video-busket-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/product-video-busket-tablet.jpg 1x, img/product-video-busket-tablet@2x.jpg 2x">
-                  <img class="video__img" src="img/product-video-busket-mobile.jpg" srcset="img/product-video-busket-mobile@2x.jpg" alt="Видео с процессом производства">
-                </picture>
-              </button>
-              <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-              <button class="catalog__button button" type="button">
-                <a class="form__link" href="#">Сделать заказ</a>
-              </button>
-            </div>
+            </article>
+            <article class="catalog__item good">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/product--laundry-basket-desktop.jpg 1x, img/product--laundry-basket-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product--laundry-basket-tablet.jpg 1x, img/product--laundry-basket-tablet@2x.jpg 2x">
+                <img class="good__img" src="img/product--laundry-basket-mobile.jpg" srcset="img/product--laundry-basket-mobile@2x.jpg" loading="lazy" alt="Корзинка для белья" width="260" height="195">
+              </picture>
+              <div class="good__info">
+                <div class="good__product">
+                  <h3 class="good__title">Корзинка для белья</h3>
+                  <p class="good__text good__text--busket">Диаметр 15 см, высота 10 см</p>
+                </div>
+                <div class="good__buy">
+                  <b class="good_price">690 руб.</b>
+                  <button class="good__button" type="button">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                    <svg class="icon" width="21" height="18">
+                      <use xlink:href="#cart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="catalog__item good">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/product-large-busket-desktop.jpg 1x, img/product-large-busket-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-large-busket-tablet.jpg 1x, img/product-large-busket-tablet@2x.jpg 2x">
+                <img class="good__img" src="img/product-large-busket-mobile.jpg" srcset="img/product-large-busket-mobile@2x.jpg" loading="lazy" alt="Большая корзинка для игрушек" width="260" height="195">
+              </picture>
+              <div class="good__info good__info--big-busket">
+                <div class="good__product">
+                  <h3 class="good__title">Большая корзинка <br> для игрушек</h3>
+                  <p class="good__text good__text--big-busket">Диаметр 30 см, высота 30 см</p>
+                </div>
+                <div class="good__buy">
+                  <b class="good_price">1 500 руб.</b>
+                  <button class="good__button" type="button">
+                    <span class="visually-hidden">Добавить в корзину</span>
+                    <svg class="icon" width="21" height="18">
+                      <use xlink:href="#cart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      <section class="video">
+        <div class="container container__video">
+          <div class="video__main-container">
+            <div class="video__wrap">
+              <svg class="icon" width="32" height="22">
+                <use xlink:href="#video-icon"></use>
+              </svg>
+              <h3 class="video__tittle">Процесс производства</h3>
+            </div>
+            <button class="video__image" type="button">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/product-video-busket-desktop.jpg 1x, img/product-video-busket-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/product-video-busket-tablet.jpg 1x, img/product-video-busket-tablet@2x.jpg 2x">
+                <img class="video__img" src="img/product-video-busket-mobile.jpg" srcset="img/product-video-busket-mobile@2x.jpg" alt="Видео с процессом производства">
+              </picture>
+            </button>
+            <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+              как появляются наши товары.
+            </p>
+            <a class="form__link catalog__button button" href="#">Сделать заказ</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
