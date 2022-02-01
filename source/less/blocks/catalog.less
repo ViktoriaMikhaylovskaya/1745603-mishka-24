@@ -24,7 +24,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: -64.5px;
+    margin-top: -63px;
     padding-top: 103px;
     padding-bottom: 96px;
     font-size: 53px;
@@ -42,7 +42,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    bottom: -25px;
+    bottom: -24px;
     left: 0;
     content: url("../img/zigzag-catalog-desktop.svg");
   }
@@ -93,7 +93,7 @@
   margin: 0;
 }
 
-.good__link {
+.good {
   .link-reset;
 
   @media (min-width: @tablet-width) {
@@ -102,7 +102,6 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
-    height: 100%;
   }
 }
 
@@ -169,6 +168,7 @@
   padding-right: 0;
   border: none;
   background-color: #ffffff;
+  .link-reset;
 
   @media (min-width: @desktop-width) {
     padding: 23px;
@@ -179,8 +179,14 @@
 
 .good__img {
   @media (min-width: @tablet-width) {
-    min-width: 316px;
     display: block;
+    width: 334px;
+    height: 331px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 316px;
+    height: 462px;
   }
 }
 
@@ -250,6 +256,7 @@
   padding: 15px 18px;
   margin-top: 10px;
   margin-bottom: 31px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     width: 87.5%;
