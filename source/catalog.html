@@ -119,36 +119,36 @@
     </svg>
 
     <header class="header">
-      <div class="container container__header">
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="container container--header">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <div class="main-nav__wrapper">
             <a class="header__logo" href="index.html">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
-                <img class="header__logo--img" src="img/mishka-logo-mobile.svg" loading="lazy" alt="Логотип сайта">
+                <img class="header__logo-img" src="img/mishka-logo-mobile.svg" loading="lazy" alt="Логотип сайта">
               </picture>
             </a>
-            <button class="button__menu main-nav__toggle" type="button">
+            <button class="button-menu main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
-            <ul class="main-nav__list site__list">
-              <li class="site__item">
+            <ul class="main-nav__list site-list">
+              <li class="site-item">
                 <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
               </li>
-              <li class="site__item">
+              <li class="site-item">
                 <a class="main-nav__link" href="form.html">Вязание на заказ</a>
               </li>
             </ul>
-            <ul class="user__list">
-              <li class="user__item">
+            <ul class="user-list">
+              <li class="user-item">
                 <a class="main-nav__link main-nav__search" href="#">
                   <svg class="icon" width="18" height="18">
                     <use xlink:href="#search"></use>
                   </svg>
-                  <p class="main-nav__search--text">Поиск по сайту</p></a>
+                  <p class="main-nav__search-text">Поиск по сайту</p></a>
               </li>
-              <li class="user__item">
+              <li class="user-item">
                 <a class="main-nav__link" href="#">
                   <svg class="main-nav__busket icon" width="21" height="18">
                     <use xlink:href="#cart"></use>
@@ -157,12 +157,12 @@
                 </a>
               </li>
             </ul>
-            <ul class="news__list">
-              <li class="news__item">
-                <a class="news__link" href="#">Новые поступления</a>
+            <ul class="news-list">
+              <li class="news-item">
+                <a class="news-link" href="#">Новые поступления</a>
               </li>
-              <li class="news__item">
-                <a class="news__link" href="#">Распродажа</a>
+              <li class="news-item">
+                <a class="news-link" href="#">Распродажа</a>
               </li>
             </ul>
             <p class="main-nav__text">Бесплатная доставка по России</p>
@@ -173,17 +173,20 @@
 
     <main class="main">
       <h1 class="visually-hidden">"Мишка" - магазин предметов ручной работы для дома</h1>
-      <section class="catalog-title">
-        <div class="container container__catalog-title">
-          <h2 class="catalog__title">Каталог товаров</h2>
+      <section class="page-catalog-title">
+        <div class="container container--catalog-title">
+          <h2 class="page-catalog-title__text">Каталог товаров</h2>
         </div>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">"Каталог товаров магазина предметов ручной работы для дома.</h2>
-        <div class="container container__catalog">
+        <div class="container container--catalog">
           <div class="catalog__list ">
             <article class="catalog__item good">
               <picture>
+                <source media="(min-width: 1150px)" srcset="img/product-rabbit-desktop.webp 1x, img/product-rabbit-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/product-rabbit-tablet.webp 1x, img/product-rabbit-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/product-rabbit-mobile.webp 1x, img/product-rabbit-mobile@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1150px)" srcset="img/product-rabbit-desktop.jpg 1x, img/product-rabbit-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/product-rabbit-tablet.jpg 1x, img/product-rabbit-tablet@2x.jpg 2x">
                 <img class="good__img" src="img/product-rabbit-mobile.jpg" srcset="img/product-rabbit-mobile@2x.jpg" loading="lazy" alt="Фото вязаного зайца" width="260" height="195">
@@ -194,18 +197,21 @@
                   <p class="good__text">Рост 30 см, вес 200 г</p>
                 </div>
                 <div class="good__buy">
-                  <b class="good_price">1 200 руб.</b>
-                  <button class="good__button" type="button">
+                  <b class="good__price">1 200 руб.</b>
+                  <a class="good__link" href="card.html">
                     <span class="visually-hidden">Добавить в корзину</span>
                     <svg class="icon" width="21" height="18">
                       <use xlink:href="#cart"></use>
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
             </article>
             <article class="catalog__item good">
               <picture>
+                <source media="(min-width: 1150px)" srcset="img/product--laundry-basket-desktop.webp 1x, img/product--laundry-basket-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/product--laundry-basket-tablet.webp 1x, img/product--laundry-basket-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/product--laundry-basket-mobile.webp 1x, img/product--laundry-basket-mobile@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1150px)" srcset="img/product--laundry-basket-desktop.jpg 1x, img/product--laundry-basket-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/product--laundry-basket-tablet.jpg 1x, img/product--laundry-basket-tablet@2x.jpg 2x">
                 <img class="good__img" src="img/product--laundry-basket-mobile.jpg" srcset="img/product--laundry-basket-mobile@2x.jpg" loading="lazy" alt="Корзинка для белья" width="260" height="195">
@@ -216,18 +222,21 @@
                   <p class="good__text good__text--busket">Диаметр 15 см, высота 10 см</p>
                 </div>
                 <div class="good__buy">
-                  <b class="good_price">690 руб.</b>
-                  <button class="good__button" type="button">
+                  <b class="good__price">690 руб.</b>
+                  <a class="good__link" href="card.html">
                     <span class="visually-hidden">Добавить в корзину</span>
                     <svg class="icon" width="21" height="18">
                       <use xlink:href="#cart"></use>
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
             </article>
             <article class="catalog__item good">
               <picture>
+                <source media="(min-width: 1150px)" srcset="img/product-large-busket-desktop.webp 1x, img/product-large-busket-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/product-large-busket-tablet.webp 1x, img/product-large-busket-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/product-large-busket-mobile.webp 1x, img/product-large-busket-mobile@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1150px)" srcset="img/product-large-busket-desktop.jpg 1x, img/product-large-busket-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/product-large-busket-tablet.jpg 1x, img/product-large-busket-tablet@2x.jpg 2x">
                 <img class="good__img" src="img/product-large-busket-mobile.jpg" srcset="img/product-large-busket-mobile@2x.jpg" loading="lazy" alt="Большая корзинка для игрушек" width="260" height="195">
@@ -238,13 +247,13 @@
                   <p class="good__text good__text--big-busket">Диаметр 30 см, высота 30 см</p>
                 </div>
                 <div class="good__buy">
-                  <b class="good_price">1 500 руб.</b>
-                  <button class="good__button" type="button">
+                  <b class="good__price">1 500 руб.</b>
+                  <a class="good__link" href="card.html">
                     <span class="visually-hidden">Добавить в корзину</span>
                     <svg class="icon" width="21" height="18">
                       <use xlink:href="#cart"></use>
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
             </article>
@@ -253,8 +262,8 @@
       </section>
 
       <section class="video">
-        <div class="container container__video">
-          <div class="video__main-container">
+        <div class="container container--video">
+          <div class="video-container">
             <div class="video__wrap">
               <svg class="icon" width="32" height="22">
                 <use xlink:href="#video-icon"></use>
@@ -263,6 +272,9 @@
             </div>
             <button class="video__image" type="button">
               <picture>
+                <source media="(min-width: 1150px)" srcset="img/product-video-busket-desktop.webp 1x, img/product-video-busket-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/product-video-busket-tablet.webp 1x, img/product-video-busket-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 320px)" srcset="img/product-video-busket-mobile.webp 1x, img/product-video-busket-mobile@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1150px)" srcset="img/product-video-busket-desktop.jpg 1x, img/product-video-busket-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/product-video-busket-tablet.jpg 1x, img/product-video-busket-tablet@2x.jpg 2x">
                 <img class="video__img" src="img/product-video-busket-mobile.jpg" srcset="img/product-video-busket-mobile@2x.jpg" alt="Видео с процессом производства">
@@ -271,14 +283,14 @@
             <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
               как появляются наши товары.
             </p>
-            <a class="form__link catalog__button button" href="#">Сделать заказ</a>
+            <a class="video__catalog-button button" href="#">Сделать заказ</a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container container__footer">
+      <div class="container container--footer">
 
         <a class="footer__logo" href="#">
           <svg class="icon" width="102" height="35">
@@ -324,8 +336,8 @@
       </div>
     </footer>
 
-    <div class="modal-container modal">
-      <div class="container__modal">
+    <div class="modal modal--container">
+      <div class="modal__content">
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__text">Выберите размер:</p>
         <form action="https://echo.htmlacademy.ru/" method="POST">
@@ -333,21 +345,21 @@
             <li class="modal__item">
               <label class="control" tabindex="0">
                 <input class="visually-hidden control__radio-input" type="radio" name="type" value="Size S">
-                <span class="modal__item--radio">S</span>
+                <span class="modal__item-radio">S</span>
                 <span class="visually-hidden">Размер S</span>
               </label>
             </li>
             <li class="modal__item">
               <label class="control" tabindex="0">
                 <input class="visually-hidden control__radio-input" type="radio" name="type" value="Size M">
-                <span class="modal__item--radio">M</span>
+                <span class="modal__item-radio">M</span>
                 <span class="visually-hidden">Размер M</span>
               </label>
             </li>
             <li class="modal__item">
               <label class="control" tabindex="0">
                 <input class="visually-hidden control__radio-input" type="radio" name="type" value="Size L">
-                <span class="modal__item--radio">L</span>
+                <span class="modal__item-radio">L</span>
                 <span class="visually-hidden">Размер L</span>
               </label>
             </li>

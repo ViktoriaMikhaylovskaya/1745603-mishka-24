@@ -43,7 +43,7 @@
     0 16px 0 0 fade(#231f20, 30%);
 }
 
-.main-nav--closed .user__list {
+.main-nav--closed .user-list {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -53,7 +53,7 @@
   }
 }
 
-.main-nav--closed .site__list {
+.main-nav--closed .site-list {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -118,11 +118,16 @@
   right: 0;
   left: 0;
   z-index: 10;
-  min-height: 55vh;
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    background-color: #fafafa;
+    z-index: 0;
+  }
 }
 
-.site__list {
+.site-list {
   .list-reset;
 
   @media (min-width: @tablet-width) {
@@ -135,7 +140,7 @@
   }
 }
 
-.site__link {
+.site-link {
   .link-reset;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
@@ -144,7 +149,7 @@
   padding: 10px;
 }
 
-.user__list {
+.user-list {
   .list-reset;
 
   @media (min-width: @tablet-width) {
@@ -208,7 +213,7 @@
   opacity: 0.3;
 }
 
-.site__item .main-nav__link {
+.site-item .main-nav__link {
   @media (min-width: @tablet-width) {
     padding: 8px 20px;
     padding-right: 17px;
@@ -225,17 +230,17 @@
   }
 }
 
-.site__item:last-child .main-nav__link {
+.site-item:last-child .main-nav__link {
   @media (min-width: @desktop-width) {
     border-right: none;
   }
 }
 
-.site__item .main-nav__link:hover {
+.site-item .main-nav__link:hover {
   opacity: 0.3;
 }
 
-.user__item .main-nav__link {
+.user-item .main-nav__link {
   padding: 32px;
 
   @media (min-width: @tablet-width) {
@@ -249,7 +254,7 @@
   }
 }
 
-.user__item:last-child .main-nav__link {
+.user-item:last-child .main-nav__link {
   @media (min-width: @tablet-width) {
     padding-right: 20px;
     padding-top: 28px;
@@ -273,7 +278,7 @@
   }
 }
 
-.main-nav__search--text {
+.main-nav__search-text {
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -281,7 +286,7 @@
   }
 }
 
-.news__list {
+.news-list {
   .list-reset;
   display: none;
 
@@ -291,14 +296,14 @@
   }
 }
 
-.news__item {
+.news-item {
   @media (min-width: @desktop-width) {
     padding: 18px 11px;
     margin-right: 20px;
   }
 }
 
-.news__link {
+.news-link {
   .link-reset;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
@@ -312,12 +317,12 @@
   }
 }
 
-.news__link:focus,
-.news__link:hover {
+.news-link:focus,
+.news-link:hover {
   opacity: 0.6;
 }
 
-.news__link:active {
+.news-link:active {
   opacity: 0.3;
 }
 
@@ -344,10 +349,3 @@
   margin: 0;
 }
 
-// use .icon-svg {
-//   fill: #FF2D49;
-// }
-
-// svg path{
-//   fill: inherit;
-// }

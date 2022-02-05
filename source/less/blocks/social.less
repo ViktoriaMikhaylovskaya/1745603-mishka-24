@@ -1,0 +1,27 @@
+.social__list {
+  .list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 7px;
+  }
+}
+
+.social__link {
+  padding: 20px;
+}
+
+.social__link .icon {
+  fill: #000000;
+}
+
+.social__link:hover .icon {
+  fill: #46c1ae;
+}
+
+.social__link:active .icon {
+  fill: #46c1ae;
+  opacity: 0.3;
+}

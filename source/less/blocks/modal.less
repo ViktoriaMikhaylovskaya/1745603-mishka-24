@@ -1,4 +1,4 @@
-.modal-container {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,11 +9,11 @@
   z-index: 1;
 }
 
-.modal {
+.modal--container {
   display: none;
 }
 
-.container__modal {
+.modal__content {
   position: relative;
   margin: auto;
   padding: 28.5px 30px;
@@ -62,16 +62,16 @@
   width: 100%;
 }
 
-.control__radio-input:checked + .modal__item--radio,
-.control__radio-input:active + .modal__item--radio {
+.control__radio-input:checked + .modal__item-radio,
+.control__radio-input:active + .modal__item-radio {
   border: 2px solid #63d1bb;
 }
 
-.control__radio-input:checked:hover + .modal__item--radio {
+.control__radio-input:checked:hover + .modal__item-radio {
   border: 2px solid #444444;
 }
 
-.modal__item--radio {
+.modal__item-radio {
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -85,7 +85,7 @@
   }
 }
 
-.modal__item--radio:hover {
+.modal__item-radio:hover {
   border: 2px solid #444444;
 }
 

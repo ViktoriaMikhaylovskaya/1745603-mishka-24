@@ -116,36 +116,36 @@
     </svg>
 
     <header class="header">
-      <div class="container container__header">
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="container container--header">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <div class="main-nav__wrapper">
             <a class="header__logo" href="index.html">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
-                <img class="header__logo--img" src="img/mishka-logo-mobile.svg" loading="lazy" alt="Логотип сайта">
+                <img class="header__logo-img" src="img/mishka-logo-mobile.svg" loading="lazy" alt="Логотип сайта">
               </picture>
             </a>
-            <button class="button__menu main-nav__toggle" type="button">
+            <button class="button-menu main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
-            <ul class="main-nav__list site__list">
-              <li class="site__item">
+            <ul class="main-nav__list site-list">
+              <li class="site-item">
                 <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
               </li>
-              <li class="site__item">
+              <li class="site-item">
                 <a class="main-nav__link" href="form.html">Вязание на заказ</a>
               </li>
             </ul>
-            <ul class="user__list">
-              <li class="user__item">
+            <ul class="user-list">
+              <li class="user-item">
                 <a class="main-nav__link main-nav__search" href="#">
                   <svg class="icon" width="18" height="18">
                     <use xlink:href="#search"></use>
                   </svg>
-                  <p class="main-nav__search--text">Поиск по сайту</p></a>
+                  <p class="main-nav__search-text">Поиск по сайту</p></a>
               </li>
-              <li class="user__item">
+              <li class="user-item">
                 <a class="main-nav__link" href="#">
                   <svg class="main-nav__busket icon" width="21" height="18">
                     <use xlink:href="#cart"></use>
@@ -154,12 +154,12 @@
                 </a>
               </li>
             </ul>
-            <ul class="news__list">
-              <li class="news__item">
-                <a class="news__link" href="#">Новые поступления</a>
+            <ul class="news-list">
+              <li class="news-item">
+                <a class="news-link" href="#">Новые поступления</a>
               </li>
-              <li class="news__item">
-                <a class="news__link" href="#">Распродажа</a>
+              <li class="news-item">
+                <a class="news-link" href="#">Распродажа</a>
               </li>
             </ul>
             <p class="main-nav__text">Бесплатная доставка по России</p>
@@ -171,10 +171,10 @@
     <main class="main">
       <h1 class="visually-hidden">"Мишка" - магазин предметов ручной работы для дома</h1>
       <section class="promo">
-        <div class="container container__promo">
+        <div class="container container--promo">
           <h2 class="promo__title">Милые штуки ручной <br> работы для дома</h2>
         </div>
-        <div class="container container__promo-list">
+        <div class="container container--promo-list">
           <div class="promo__list">
             <div class="promo__item promo__interior">
               <a class="promo__link" href="#">Предметы <br> интерьера
@@ -197,7 +197,7 @@
       </section>
 
       <section class="product">
-        <div class="container container__product">
+        <div class="container container--product">
           <h2 class="product__title">Вязаные корзинки</h2>
           <span class="product__offer">Товар недели</span>
           <div class="product__description">
@@ -221,6 +221,9 @@
           </div>
           <div class="product__img">
             <picture>
+              <source media="(min-width: 1150px)" srcset="img/offer-product-desktop.webp 1x, img/offer-product-desktop@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/offer-product-tablet.webp 1x, img/offer-product-tablet@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 320px)" srcset="img/offer-product-mobile.webp 1x, img/offer-product-mobile@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1150px)" srcset="img/offer-product-desktop.jpg 1x, img/offer-product-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/offer-product-tablet.jpg 1x, img/offer-product-tablet@2x.jpg 2x">
               <img src="img/offer-product-mobile.jpg" srcset="img/offer-product-mobile@2x.jpg 2x" loading="lazy" alt="Товар недели">
@@ -228,13 +231,13 @@
           </div>
           <div class="product__order">
             <div class="product__price">Цена: 990 руб.</div>
-            <button class="product__button button" type="button">Заказать</button>
+            <a class="product__link button" href="buy.html">Заказать</a>
           </div>
         </div>
       </section>
 
       <section class="advantages">
-        <div class="container container__advantages">
+        <div class="container container--advantages">
           <h2 class="advantages__title">Коротко о нас:</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--flower">
@@ -278,7 +281,7 @@
       </section>
 
       <section class="reviews">
-        <div class="container container__reviews">
+        <div class="container container--reviews">
           <h2 class="reviews__title">Отзывы</h2>
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
             инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
@@ -290,12 +293,12 @@
           </div>
           <div class="reviews__button">
             <button class="reviews__button-arrow" type="button" aria-label="Пролестнуть влево">
-                <svg class="button__arrow-left" width="50" height="26">
+                <svg class="reviews__button-right-svg" width="50" height="26">
                   <use xlink:href="#huge-arrow-left"></use>
                 </svg>
             </button>
             <button class="reviews__button-arrow" type="button" aria-label="Пролестнуть вправо">
-              <svg class="button__arrow-right" width="50" height="26">
+              <svg class="reviews__button-left-svg" width="50" height="26">
                 <use xlink:href="#huge-arrow-left"></use>
               </svg>
             </button>
@@ -305,12 +308,12 @@
       </section>
 
       <section class="contacts">
-        <div class="container container__contacts">
+        <div class="container container--contacts">
           <h2 class="contacts__title">Контакты</h2>
           <dl class="contacts__list">
             <div class="contacts__item">
               <dt class="contacts__description">e-mail:</dt>
-              <dd class="contacts__text e-mail__text">info@mimimishkashop.ru</dd>
+              <dd class="contacts__text contacts__text--email">info@mimimishkashop.ru</dd>
             </div>
             <div class="contacts__item">
               <dt class="contacts__description">адрес:</dt>
@@ -323,13 +326,13 @@
             width="320" height="456" style="border:0;" allowfullscreen="" loading="lazy" title="Наше местоположение">
             </iframe>
           </div>
-            <a class="contacts__link contacts__button button" href="#">Напишите нам</a>
+            <a class="contacts__link contacts__button" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container container__footer">
+      <div class="container container--footer">
 
         <a class="footer__logo" href="#">
           <svg class="icon" width="102" height="35">
@@ -375,8 +378,8 @@
       </div>
     </footer>
 
-    <div class="modal-container modal">
-      <div class="container__modal">
+    <div class="modal modal--container">
+      <div class="modal__content">
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__text">Выберите размер:</p>
         <form action="https://echo.htmlacademy.ru/" method="POST">
@@ -384,21 +387,21 @@
             <li class="modal__item">
               <label class="control" tabindex="0">
                 <input class="visually-hidden control__radio-input" type="radio" name="type" value="Size S">
-                <span class="modal__item--radio">S</span>
+                <span class="modal__item-radio">S</span>
                 <span class="visually-hidden">Размер S</span>
               </label>
             </li>
             <li class="modal__item">
               <label class="control" tabindex="0">
                 <input class="visually-hidden control__radio-input" type="radio" name="type" value="Size M">
-                <span class="modal__item--radio">M</span>
+                <span class="modal__item-radio">M</span>
                 <span class="visually-hidden">Размер M</span>
               </label>
             </li>
             <li class="modal__item">
               <label class="control" tabindex="0">
                 <input class="visually-hidden control__radio-input" type="radio" name="type" value="Size L">
-                <span class="modal__item--radio">L</span>
+                <span class="modal__item-radio">L</span>
                 <span class="visually-hidden">Размер L</span>
               </label>
             </li>

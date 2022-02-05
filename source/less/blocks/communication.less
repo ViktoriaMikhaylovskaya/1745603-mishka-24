@@ -39,7 +39,7 @@
 }
 
 .communication .sorting-type__title--email {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
     margin-top: 20px;
@@ -60,11 +60,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 4px;
+    margin-right: 5px;
   }
 }
 
-.communication__extra {
+.communication-extra {
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -72,11 +72,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 38px;
+    padding-bottom: 37px;
   }
 }
 
-.communication--section {
+.communication-section {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -96,7 +96,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 10px;
+    margin-top: 11px;
   }
 }
 
@@ -112,9 +112,14 @@
     line-height: 18px;
     margin-right: 25px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 2px;
+    margin-right: 23px;
+  }
 }
 
-.communication__condition {
+.communication-condition {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -149,7 +154,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 13px;
+    padding-bottom: 12px;
+    padding-left: 15px;
   }
 }
 
@@ -203,13 +209,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 5px;
+    padding-top: 7px;
     padding-bottom: 14px;
   }
 }
 
-.field__email .field__title,
-.field__tel .field__title {
+.field-email .field__title,
+.field-tel .field__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -224,7 +230,7 @@
   }
 }
 
-.field__tel {
+.field-tel {
   margin-top: 0;
 }
 
@@ -268,7 +274,11 @@
 .sorting-type__group--email {
   @media (min-width: @tablet-width) {
     padding-top: 0;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 28px;
   }
 }
 
@@ -295,6 +305,7 @@
   letter-spacing: 0;
   font-size: 17px;
   line-height: 18px;
+  resize: none;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -324,7 +335,7 @@
   box-shadow: none;
 }
 
-.communication__bottom {
+.communication-bottom {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -343,7 +354,7 @@
   }
 }
 
-.communication__button {
+.communication-button {
   margin-top: 30px;
   padding: 15px 40px;
   font-size: 17px;
@@ -351,9 +362,9 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 230px;
+    width: auto;
     order: -1;
     margin: 3px 0;
-    padding: 16px 26.5px;
+    padding: 16px 29.5px;
   }
 }
