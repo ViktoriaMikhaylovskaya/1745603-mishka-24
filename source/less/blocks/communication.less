@@ -64,7 +64,7 @@
   }
 }
 
-.communication-extra {
+.communication--extra {
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -76,7 +76,7 @@
   }
 }
 
-.communication-section {
+.communication__section {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -100,7 +100,7 @@
   }
 }
 
-.field__title {
+.communication__field-title {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -119,21 +119,6 @@
   }
 }
 
-.communication-condition {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  margin: 0;
-  margin-top: 5px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 17px;
-    line-height: 30px;
-    margin-top: 2px;
-  }
-}
-
 .communication__text {
   padding: 16px 0;
   padding-bottom: 13px;
@@ -142,7 +127,6 @@
   border-bottom: 2px solid #000000;
   font-size: 17px;
   line-height: 18px;
-  letter-spacing: 0.4px;
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
@@ -214,8 +198,8 @@
   }
 }
 
-.field-email .field__title,
-.field-tel .field__title {
+.communication__field-email .communication__field-title,
+.communication__field-tel .communication__field-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -230,7 +214,7 @@
   }
 }
 
-.field-tel {
+.communication__field-tel {
   margin-top: 0;
 }
 
@@ -271,34 +255,7 @@
   opacity: 1;
 }
 
-.sorting-type__group--email {
-  @media (min-width: @tablet-width) {
-    padding-top: 0;
-    padding-bottom: 28px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-bottom: 28px;
-  }
-}
-
-.sorting-type__group--email .field {
-  margin-top: 6px;
-}
-
-.sorting-type__group--tel {
-  padding-bottom: 0;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 33px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 34px;
-  }
-}
-
-.additionally-text {
+.communication__text-wishes {
   font-family: "Open Sans", "Arial", sans-serif;
   border: 2px solid #000000;
   padding: 15px;
@@ -319,7 +276,7 @@
   }
 }
 
-.communication__text .additionally-text {
+.communication__text .communication__text-wishes {
   border: 2px solid #000000;
   box-shadow: none;
 }
@@ -328,43 +285,9 @@
   border: 2px solid #62d1ba;
 }
 
-.additionally-text:hover,
-.additionally-text:active {
+.communication__text-wishes:hover,
+.communication__text-wishes:active {
   border-bottom: none;
   border: 2px solid #62d1ba;
   box-shadow: none;
-}
-
-.communication-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 56.5px;
-
-  @media (min-width: @tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 47px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 175px;
-    padding-right: 175px;
-  }
-}
-
-.communication-button {
-  margin-top: 30px;
-  padding: 15px 40px;
-  font-size: 17px;
-  line-height: 16px;
-  width: 100%;
-
-  @media (min-width: @tablet-width) {
-    width: auto;
-    order: -1;
-    margin: 3px 0;
-    padding: 16px 29.5px;
-  }
 }

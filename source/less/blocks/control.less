@@ -1,0 +1,52 @@
+.control__input-radio:checked + .control-mark__radio::before {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 16px;
+  height: 16px;
+  background-color: #62d1ba;
+  border-radius: 50%;
+  content: "";
+
+  @media (min-width: @tablet-width) {
+    top: 12px;
+    left: 13px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.control__label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-size: 19px;
+    line-height: 18px;
+    padding: 14px 0;
+
+    @media (min-width: @desktop-width) {
+      padding: 15px 0;
+    }
+  }
+}
+
+.control__input + .control-mark__checkbox::before {
+  position: absolute;
+  top: 8px;
+  left: 4px;
+}
+
+.control__input:checked + .control-mark__checkbox::before {
+  content: url("../img/checkbox-active-mobile.svg");
+
+  @media (min-width: @tablet-width) {
+    content: url("../img/checkbox-active-tablet.svg");
+    top: 14px;
+    left: 8px;
+  }
+}
